@@ -1,0 +1,2437 @@
+include current-theme.conf
+include font.conf
+
+# vim:fileencoding=utf-8:foldmethod=marker
+
+#: Fonts {{{
+
+#: kitty has very powerful font management. You can configure
+#: individual font faces and even specify special fonts for particular
+#: characters.
+
+# font_family      Iosevka Bold
+# bold_font        auto
+# italic_font      auto
+# bold_italic_font auto
+
+symbol_map 1F600,1F603,1F604,1F601,1F606,1F605,1F923,1F602,1F642,1F643,1FAE0,1F609,1F60A,1F607,1F970,1F60D,1F929,1F618,1F617,263A,U+FE0F,1F61A,1F619,1F972,1F60B,1F61B,1F61C,1F92A,1F61D,1F911,1F917,1F92D,1FAE2,1FAE3,1F92B,1F914,1FAE1,1F910,1F928,1F610,1F611,1F636,1FAE5,1F636,U+200D,U+1F32B,U+FE0F,1F60F,1F612,1F644,1F62C,1F62E,U+200D,U+1F4A8,1F925,1FAE8,1F60C,1F614,1F62A,1F924,1F634,1F637,1F912,1F915,1F922,1F92E,1F927,1F975,1F976,1F974,1F635,1F92F,1F920,1F973,1F978,1F60E,1F913,1F9D0,1F615,1FAE4,1F61F,1F641,2639,U+FE0F,1F62E,1F62F,1F632,1F633,1F97A,1F979,1F626,1F627,1F628,1F630,1F625,1F622,1F62D,1F631,1F616,1F623,1F61E,1F613,1F629,1F62B,1F971,1F624,1F621,1F620,1F92C,1F608,1F47F,1F480,2620,U+FE0F,1F4A9,1F921,1F479,1F47A,1F47B,1F47D,1F47E,1F916,1F63A,1F638,1F639,1F63B,1F63C,1F63D,1F640,1F63F,1F63E,1F648,1F649,1F64A,1F48C,1F498,1F49D,1F496,1F497,1F493,1F49E,1F495,1F49F,2763,U+FE0F,1F494,2764,U+FE0F,U+200D,U+1F525,2764,U+FE0F,U+200D,U+1FA79,2764,U+FE0F,1FA77,1F9E1,1F49B,1F49A,1F499,1FA75,1F49C,1F90E,1F5A4,1FA76,1F90D,1F48B,1F4AF,1F4A2,1F4A5,1F4AB,1F4A6,1F4A8,1F573,U+FE0F,1F4AC,1F441,U+FE0F,U+200D,U+1F5E8,U+FE0F,1F5E8,U+FE0F,1F5EF,U+FE0F,1F4AD,1F4A4,1F44B,1F91A,1F590,U+FE0F,1F590,U+1F3FB,1F590,U+1F3FC,1F590,U+1F3FD,1F590,U+1F3FE,1F590,U+1F3FF,270B,1F596,1FAF1,1FAF2,1FAF3,1FAF4,1FAF7,1FAF8,1F44C,1F90C,1F90F,270C,U+FE0F,270C,U+1F3FB,270C,U+1F3FC,270C,U+1F3FD,270C,U+1F3FE,270C,U+1F3FF,1F91E,1FAF0,1F91F,1F918,1F919,1F448,1F449,1F446,1F595,1F447,261D,U+FE0F,261D,U+1F3FB,261D,U+1F3FC,261D,U+1F3FD,261D,U+1F3FE,261D,U+1F3FF,1FAF5,1F44D,1F44E,270A,1F44A,1F91B,1F91C,1F44F,1F64C,1FAF6,1F450,1F932,1F91D,1FAF1,U+1F3FB,U+200D,U+1FAF2,U+1F3FC,1F64F,270D,U+FE0F,270D,U+1F3FB,270D,U+1F3FC,270D,U+1F3FD,270D,U+1F3FE,270D,U+1F3FF,1F485,1F933,1F4AA,1F9BE,1F9BF,1F9B5,1F9B6,1F442,1F9BB,1F443,1F9E0,1FAC0,1FAC1,1F9B7,1F9B4,1F440,1F441,U+FE0F,1F445,1F444,1FAE6,1F476,1F9D2,1F466,1F467,1F9D1,1F471,1F468,1F9D4,1F468,U+200D,U+1F9B0,1F469,1F9D1,U+200D,U+1F9B0,1F469,U+200D,U+1F9B1,1F9D1,U+200D,U+1F9B1,1F469,U+200D,U+1F9B3,1F9D1,U+200D,U+1F9B3,1F469,U+200D,U+1F9B2,1F9D1,U+200D,U+1F9B2,1F471,U+200D,U+2640,U+FE0F,1F9D3,1F474,1F475,1F64D,1F64E,1F645,1F646,1F481,1F64B,1F9CF,1F647,1F926,1F937,1F9D1,U+200D,U+2695,U+FE0F,1F468,U+200D,U+2695,U+FE0F,1F469,U+200D,U+2695,U+FE0F,1F9D1,U+200D,U+1F393,1F468,U+200D,U+1F393,1F469,U+200D,U+1F393,1F9D1,U+200D,U+1F3EB,1F468,U+200D,U+1F3EB,1F469,U+200D,U+1F3EB,1F9D1,U+200D,U+2696,U+FE0F,1F468,U+200D,U+2696,U+FE0F,1F469,U+200D,U+2696,U+FE0F,1F9D1,U+200D,U+1F33E,1F468,U+200D,U+1F33E,1F469,U+200D,U+1F33E,1F9D1,U+200D,U+1F373,1F468,U+200D,U+1F373,1F469,U+200D,U+1F373,1F9D1,U+200D,U+1F527,1F468,U+200D,U+1F527,1F469,U+200D,U+1F527,1F9D1,U+200D,U+1F3ED,1F468,U+200D,U+1F3ED,1F469,U+200D,U+1F3ED,1F9D1,U+200D,U+1F4BC,1F468,U+200D,U+1F4BC,1F469,U+200D,U+1F4BC,1F9D1,U+200D,U+1F52C,1F468,U+200D,U+1F52C,1F469,U+200D,U+1F52C,1F9D1,U+200D,U+1F4BB,1F468,U+200D,U+1F4BB,1F469,U+200D,U+1F4BB,1F9D1,U+200D,U+1F3A4,1F468,U+200D,U+1F3A4,1F469,U+200D,U+1F3A4,1F9D1,U+200D,U+1F3A8,1F468,U+200D,U+1F3A8,1F469,U+200D,U+1F3A8,1F9D1,U+200D,U+2708,U+FE0F,1F468,U+200D,U+2708,U+FE0F,1F469,U+200D,U+2708,U+FE0F,1F9D1,U+200D,U+1F680,1F468,U+200D,U+1F680,1F469,U+200D,U+1F680,1F9D1,U+200D,U+1F692,1F468,U+200D,U+1F692,1F469,U+200D,U+1F692,1F46E,1F575,U+FE0F,1F575,U+1F3FB,1F575,U+1F3FC,1F575,U+1F3FD,1F575,U+1F3FE,1F575,U+1F3FF,1F575,U+FE0F,U+200D,U+2642,U+FE0F,1F575,U+1F3FB,U+200D,U+2642,U+FE0F,1F575,U+1F3FC,U+200D,U+2642,U+FE0F,1F575,U+1F3FD,U+200D,U+2642,U+FE0F,1F575,U+1F3FE,U+200D,U+2642,U+FE0F,1F575,U+1F3FF,U+200D,U+2642,U+FE0F,1F575,U+FE0F,U+200D,U+2640,U+FE0F,1F575,U+1F3FB,U+200D,U+2640,U+FE0F,1F575,U+1F3FC,U+200D,U+2640,U+FE0F,1F575,U+1F3FD,U+200D,U+2640,U+FE0F,1F575,U+1F3FE,U+200D,U+2640,U+FE0F,1F575,U+1F3FF,U+200D,U+2640,U+FE0F,1F482,1F977,1F477,1FAC5,1F934,1F478,1F473,1F472,1F9D5,1F935,1F470,1F930,1FAC3,1FAC4,1F931,1F469,U+200D,U+1F37C,1F468,U+200D,U+1F37C,1F9D1,U+200D,U+1F37C,1F47C,1F385,1F936,1F9D1,U+200D,U+1F384,1F9B8,1F9B9,1F9D9,1F9DA,1F9DB,1F9DC,1F9DD,1F9DE,1F9DF,1F9CC,1F486,1F487,1F6B6,1F9CD,1F9CE,1F9D1,U+200D,U+1F9AF,1F468,U+200D,U+1F9AF,1F469,U+200D,U+1F9AF,1F9D1,U+200D,U+1F9BC,1F468,U+200D,U+1F9BC,1F469,U+200D,U+1F9BC,1F9D1,U+200D,U+1F9BD,1F468,U+200D,U+1F9BD,1F469,U+200D,U+1F9BD,1F3C3,1F483,1F57A,1F574,U+FE0F,1F574,U+1F3FB,1F574,U+1F3FC,1F574,U+1F3FD,1F574,U+1F3FE,1F574,U+1F3FF,1F46F,1F9D6,1F9D7,1F93A,1F3C7,26F7,U+FE0F,1F3C2,1F3CC,U+FE0F,1F3CC,U+1F3FB,1F3CC,U+1F3FC,1F3CC,U+1F3FD,1F3CC,U+1F3FE,1F3CC,U+1F3FF,1F3CC,U+FE0F,U+200D,U+2642,U+FE0F,1F3CC,U+1F3FB,U+200D,U+2642,U+FE0F,1F3CC,U+1F3FC,U+200D,U+2642,U+FE0F,1F3CC,U+1F3FD,U+200D,U+2642,U+FE0F,1F3CC,U+1F3FE,U+200D,U+2642,U+FE0F,1F3CC,U+1F3FF,U+200D,U+2642,U+FE0F,1F3CC,U+FE0F,U+200D,U+2640,U+FE0F,1F3CC,U+1F3FB,U+200D,U+2640,U+FE0F,1F3CC,U+1F3FC,U+200D,U+2640,U+FE0F,1F3CC,U+1F3FD,U+200D,U+2640,U+FE0F,1F3CC,U+1F3FE,U+200D,U+2640,U+FE0F,1F3CC,U+1F3FF,U+200D,U+2640,U+FE0F,1F3C4,1F6A3,1F3CA,26F9,U+FE0F,26F9,U+1F3FB,26F9,U+1F3FC,26F9,U+1F3FD,26F9,U+1F3FE,26F9,U+1F3FF,26F9,U+FE0F,U+200D,U+2642,U+FE0F,26F9,U+1F3FB,U+200D,U+2642,U+FE0F,26F9,U+1F3FC,U+200D,U+2642,U+FE0F,26F9,U+1F3FD,U+200D,U+2642,U+FE0F,26F9,U+1F3FE,U+200D,U+2642,U+FE0F,26F9,U+1F3FF,U+200D,U+2642,U+FE0F,26F9,U+FE0F,U+200D,U+2640,U+FE0F,26F9,U+1F3FB,U+200D,U+2640,U+FE0F,26F9,U+1F3FC,U+200D,U+2640,U+FE0F,26F9,U+1F3FD,U+200D,U+2640,U+FE0F,26F9,U+1F3FE,U+200D,U+2640,U+FE0F,26F9,U+1F3FF,U+200D,U+2640,U+FE0F,1F3CB,U+FE0F,1F3CB,U+1F3FB,1F3CB,U+1F3FC,1F3CB,U+1F3FD,1F3CB,U+1F3FE,1F3CB,U+1F3FF,1F3CB,U+FE0F,U+200D,U+2642,U+FE0F,1F3CB,U+1F3FB,U+200D,U+2642,U+FE0F,1F3CB,U+1F3FC,U+200D,U+2642,U+FE0F,1F3CB,U+1F3FD,U+200D,U+2642,U+FE0F,1F3CB,U+1F3FE,U+200D,U+2642,U+FE0F,1F3CB,U+1F3FF,U+200D,U+2642,U+FE0F,1F3CB,U+FE0F,U+200D,U+2640,U+FE0F,1F3CB,U+1F3FB,U+200D,U+2640,U+FE0F,1F3CB,U+1F3FC,U+200D,U+2640,U+FE0F,1F3CB,U+1F3FD,U+200D,U+2640,U+FE0F,1F3CB,U+1F3FE,U+200D,U+2640,U+FE0F,1F3CB,U+1F3FF,U+200D,U+2640,U+FE0F,1F6B4,1F6B5,1F938,1F93C,1F93D,1F93E,1F939,1F9D8,1F6C0,1F6CC,1F9D1,U+200D,U+1F91D,U+200D,U+1F9D1,1F46D,1F469,U+1F3FB,U+200D,U+1F91D,U+200D,U+1F469,U+1F3FC,1F46D,U+1F3FC,1F469,U+1F3FC,U+200D,U+1F91D,U+200D,U+1F469,U+1F3FD,1F46D,U+1F3FD,1F469,U+1F3FD,U+200D,U+1F91D,U+200D,U+1F469,U+1F3FE,1F46D,U+1F3FE,1F469,U+1F3FE,U+200D,U+1F91D,U+200D,U+1F469,U+1F3FF,1F46D,U+1F3FF,1F46B,1F469,U+1F3FB,U+200D,U+1F91D,U+200D,U+1F468,U+1F3FC,1F46B,U+1F3FC,1F469,U+1F3FC,U+200D,U+1F91D,U+200D,U+1F468,U+1F3FD,1F46B,U+1F3FD,1F469,U+1F3FD,U+200D,U+1F91D,U+200D,U+1F468,U+1F3FE,1F46B,U+1F3FE,1F469,U+1F3FE,U+200D,U+1F91D,U+200D,U+1F468,U+1F3FF,1F46B,U+1F3FF,1F46C,1F468,U+1F3FB,U+200D,U+1F91D,U+200D,U+1F468,U+1F3FC,1F46C,U+1F3FC,1F468,U+1F3FC,U+200D,U+1F91D,U+200D,U+1F468,U+1F3FD,1F46C,U+1F3FD,1F468,U+1F3FD,U+200D,U+1F91D,U+200D,U+1F468,U+1F3FE,1F46C,U+1F3FE,1F468,U+1F3FE,U+200D,U+1F91D,U+200D,U+1F468,U+1F3FF,1F46C,U+1F3FF,1F48F,1F9D1,U+1F3FB,U+200D,U+2764,U+FE0F,U+200D,U+1F48B,U+200D,U+1F9D1,U+1F3FC,U+;,U+fully-qualified,1F469,U+200D,U+2764,U+FE0F,U+200D,U+1F48B,U+200D,U+1F468,1F468,U+200D,U+2764,U+FE0F,U+200D,U+1F48B,U+200D,U+1F468,1F469,U+200D,U+2764,U+FE0F,U+200D,U+1F48B,U+200D,U+1F469,1F491,1F9D1,U+1F3FB,U+200D,U+2764,U+FE0F,U+200D,U+1F9D1,U+1F3FC,1F469,U+200D,U+2764,U+FE0F,U+200D,U+1F468,1F468,U+200D,U+2764,U+FE0F,U+200D,U+1F468,1F469,U+200D,U+2764,U+FE0F,U+200D,U+1F469,1F46A,1F468,U+200D,U+1F469,U+200D,U+1F466,1F469,U+200D,U+1F469,U+200D,U+1F466,1F468,U+200D,U+1F466,1F469,U+200D,U+1F466,1F5E3,U+FE0F,1F464,1F465,1FAC2,1F463,1F435,1F412,1F98D,1F9A7,1F436,1F415,1F9AE,1F415,U+200D,U+1F9BA,1F429,1F43A,1F98A,1F99D,1F431,1F408,1F981,1F42F,1F405,1F406,1F434,1FACE,1FACF,1F40E,1F984,1F993,1F98C,1F9AC,1F42E,1F402,1F403,1F404,1F437,1F416,1F417,1F43D,1F40F,1F411,1F410,1F42A,1F42B,1F999,1F992,1F418,1F9A3,1F98F,1F99B,1F42D,1F401,1F400,1F439,1F430,1F407,1F43F,U+FE0F,1F9AB,1F994,1F987,1F43B,1F428,1F43C,1F9A5,1F9A6,1F9A8,1F998,1F9A1,1F43E,1F983,1F414,1F413,1F423,1F424,1F425,1F426,1F427,1F54A,U+FE0F,1F985,1F986,1F9A2,1F989,1F9A4,1FAB6,1F9A9,1F99A,1F99C,1FABD,1F426,U+200D,U+2B1B,1FABF,1F438,1F40A,1F422,1F98E,1F40D,1F432,1F409,1F995,1F996,1F433,1F40B,1F42C,1F9AD,1F41F,1F420,1F421,1F988,1F419,1F41A,1FAB8,1FABC,1F40C,1F98B,1F41B,1F41C,1F41D,1FAB2,1F41E,1F997,1FAB3,1F577,U+FE0F,1F578,U+FE0F,1F982,1F99F,1FAB0,1FAB1,1F9A0,1F490,1F338,1F4AE,1FAB7,1F3F5,U+FE0F,1F339,1F940,1F33A,1F33B,1F33C,1F337,1FABB,1F331,1FAB4,1F332,1F333,1F334,1F335,1F33E,1F33F,2618,U+FE0F,1F340,1F341,1F342,1F343,1FAB9,1FABA,1F344,1F347,1F348,1F349,1F34A,1F34B,1F34C,1F34D,1F96D,1F34E,1F34F,1F350,1F351,1F352,1F353,1FAD0,1F95D,1F345,1FAD2,1F965,1F951,1F346,1F954,1F955,1F33D,1F336,U+FE0F,1FAD1,1F952,1F96C,1F966,1F9C4,1F9C5,1F95C,1FAD8,1F330,1FADA,1FADB,1F35E,1F950,1F956,1FAD3,1F968,1F96F,1F95E,1F9C7,1F9C0,1F356,1F357,1F969,1F953,1F354,1F35F,1F355,1F32D,1F96A,1F32E,1F32F,1FAD4,1F959,1F9C6,1F95A,1F373,1F958,1F372,1FAD5,1F963,1F957,1F37F,1F9C8,1F9C2,1F96B,1F371,1F358,1F359,1F35A,1F35B,1F35C,1F35D,1F360,1F362,1F363,1F364,1F365,1F96E,1F361,1F95F,1F960,1F961,1F980,1F99E,1F990,1F991,1F9AA,1F366,1F367,1F368,1F369,1F36A,1F382,1F370,1F9C1,1F967,1F36B,1F36C,1F36D,1F36E,1F36F,1F37C,1F95B,2615,1FAD6,1F375,1F376,1F37E,1F377,1F378,1F379,1F37A,1F37B,1F942,1F943,1FAD7,1F964,1F9CB,1F9C3,1F9C9,1F9CA,1F962,1F37D,U+FE0F,1F374,1F944,1F52A,1FAD9,1F3FA,1F30D,1F30E,1F30F,1F310,1F5FA,U+FE0F,1F5FE,1F9ED,1F3D4,U+FE0F,26F0,U+FE0F,1F30B,1F5FB,1F3D5,U+FE0F,1F3D6,U+FE0F,1F3DC,U+FE0F,1F3DD,U+FE0F,1F3DE,U+FE0F,1F3DF,U+FE0F,1F3DB,U+FE0F,1F3D7,U+FE0F,1F9F1,1FAA8,1FAB5,1F6D6,1F3D8,U+FE0F,1F3DA,U+FE0F,1F3E0,1F3E1,1F3E2,1F3E3,1F3E4,1F3E5,1F3E6,1F3E8,1F3E9,1F3EA,1F3EB,1F3EC,1F3ED,1F3EF,1F3F0,1F492,1F5FC,1F5FD,26EA,1F54C,1F6D5,1F54D,26E9,U+FE0F,1F54B,26F2,26FA,1F301,1F303,1F3D9,U+FE0F,1F304,1F305,1F306,1F307,1F309,2668,U+FE0F,1F3A0,1F6DD,1F3A1,1F3A2,1F488,1F3AA,1F682,1F683,1F684,1F685,1F686,1F687,1F688,1F689,1F68A,1F69D,1F69E,1F68B,1F68C,1F68D,1F68E,1F690,1F691,1F692,1F693,1F694,1F695,1F696,1F697,1F698,1F699,1F6FB,1F69A,1F69B,1F69C,1F3CE,U+FE0F,1F3CD,U+FE0F,1F6F5,1F9BD,1F9BC,1F6FA,1F6B2,1F6F4,1F6F9,1F6FC,1F68F,1F6E3,U+FE0F,1F6E4,U+FE0F,1F6E2,U+FE0F,26FD,1F6DE,1F6A8,1F6A5,1F6A6,1F6D1,1F6A7,2693,1F6DF,26F5,1F6F6,1F6A4,1F6F3,U+FE0F,26F4,U+FE0F,1F6E5,U+FE0F,1F6A2,2708,U+FE0F,1F6E9,U+FE0F,1F6EB,1F6EC,1FA82,1F4BA,1F681,1F69F,1F6A0,1F6A1,1F6F0,U+FE0F,1F680,1F6F8,1F6CE,U+FE0F,1F9F3,231B,23F3,231A,23F0,23F1,U+FE0F,23F2,U+FE0F,1F570,U+FE0F,1F55B,1F567,1F550,1F55C,1F551,1F55D,1F552,1F55E,1F553,1F55F,1F554,1F560,1F555,1F561,1F556,1F562,1F557,1F563,1F558,1F564,1F559,1F565,1F55A,1F566,1F311,1F312,1F313,1F314,1F315,1F316,1F317,1F318,1F319,1F31A,1F31B,1F31C,1F321,U+FE0F,2600,U+FE0F,1F31D,1F31E,1FA90,2B50,1F31F,1F320,1F30C,2601,U+FE0F,26C5,26C8,U+FE0F,1F324,U+FE0F,1F325,U+FE0F,1F326,U+FE0F,1F327,U+FE0F,1F328,U+FE0F,1F329,U+FE0F,1F32A,U+FE0F,1F32B,U+FE0F,1F32C,U+FE0F,1F300,1F308,1F302,2602,U+FE0F,2614,26F1,U+FE0F,26A1,2744,U+FE0F,2603,U+FE0F,26C4,2604,U+FE0F,1F525,1F4A7,1F30A,1F383,1F384,1F386,1F387,1F9E8,2728,1F388,1F389,1F38A,1F38B,1F38D,1F38E,1F38F,1F390,1F391,1F9E7,1F380,1F381,1F397,U+FE0F,1F39F,U+FE0F,1F3AB,1F396,U+FE0F,1F3C6,1F3C5,1F947,1F948,1F949,26BD,26BE,1F94E,1F3C0,1F3D0,1F3C8,1F3C9,1F3BE,1F94F,1F3B3,1F3CF,1F3D1,1F3D2,1F94D,1F3D3,1F3F8,1F94A,1F94B,1F945,26F3,26F8,U+FE0F,1F3A3,1F93F,1F3BD,1F3BF,1F6F7,1F94C,1F3AF,1FA80,1FA81,1F52B,1F3B1,1F52E,1FA84,1F3AE,1F579,U+FE0F,1F3B0,1F3B2,1F9E9,1F9F8,1FA85,1FAA9,1FA86,2660,U+FE0F,2665,U+FE0F,2666,U+FE0F,2663,U+FE0F,265F,U+FE0F,1F0CF,1F004,1F3B4,1F3AD,1F5BC,U+FE0F,1F3A8,1F9F5,1FAA1,1F9F6,1FAA2,1F453,1F576,U+FE0F,1F97D,1F97C,1F9BA,1F454,1F455,1F456,1F9E3,1F9E4,1F9E5,1F9E6,1F457,1F458,1F97B,1FA71,1FA72,1FA73,1F459,1F45A,1FAAD,1F45B,1F45C,1F45D,1F6CD,U+FE0F,1F392,1FA74,1F45E,1F45F,1F97E,1F97F,1F460,1F461,1FA70,1F462,1FAAE,1F451,1F452,1F3A9,1F393,1F9E2,1FA96,26D1,U+FE0F,1F4FF,1F484,1F48D,1F48E,1F507,1F508,1F509,1F50A,1F4E2,1F4E3,1F4EF,1F514,1F515,1F3BC,1F3B5,1F3B6,1F399,U+FE0F,1F39A,U+FE0F,1F39B,U+FE0F,1F3A4,1F3A7,1F4FB,1F3B7,1FA97,1F3B8,1F3B9,1F3BA,1F3BB,1FA95,1F941,1FA98,1FA87,1FA88,1F4F1,1F4F2,260E,U+FE0F,1F4DE,1F4DF,1F4E0,1F50B,1FAAB,1F50C,1F4BB,1F5A5,U+FE0F,1F5A8,U+FE0F,2328,U+FE0F,1F5B1,U+FE0F,1F5B2,U+FE0F,1F4BD,1F4BE,1F4BF,1F4C0,1F9EE,1F3A5,1F39E,U+FE0F,1F4FD,U+FE0F,1F3AC,1F4FA,1F4F7,1F4F8,1F4F9,1F4FC,1F50D,1F50E,1F56F,U+FE0F,1F4A1,1F526,1F3EE,1FA94,1F4D4,1F4D5,1F4D6,1F4D7,1F4D8,1F4D9,1F4DA,1F4D3,1F4D2,1F4C3,1F4DC,1F4C4,1F4F0,1F5DE,U+FE0F,1F4D1,1F516,1F3F7,U+FE0F,1F4B0,1FA99,1F4B4,1F4B5,1F4B6,1F4B7,1F4B8,1F4B3,1F9FE,1F4B9,2709,U+FE0F,1F4E7,1F4E8,1F4E9,1F4E4,1F4E5,1F4E6,1F4EB,1F4EA,1F4EC,1F4ED,1F4EE,1F5F3,U+FE0F,270F,U+FE0F,2712,U+FE0F,1F58B,U+FE0F,1F58A,U+FE0F,1F58C,U+FE0F,1F58D,U+FE0F,1F4DD,1F4BC,1F4C1,1F4C2,1F5C2,U+FE0F,1F4C5,1F4C6,1F5D2,U+FE0F,1F5D3,U+FE0F,1F4C7,1F4C8,1F4C9,1F4CA,1F4CB,1F4CC,1F4CD,1F4CE,1F587,U+FE0F,1F4CF,1F4D0,2702,U+FE0F,1F5C3,U+FE0F,1F5C4,U+FE0F,1F5D1,U+FE0F,1F512,1F513,1F50F,1F510,1F511,1F5DD,U+FE0F,1F528,1FA93,26CF,U+FE0F,2692,U+FE0F,1F6E0,U+FE0F,1F5E1,U+FE0F,2694,U+FE0F,1F4A3,1FA83,1F3F9,1F6E1,U+FE0F,1FA9A,1F527,1FA9B,1F529,2699,U+FE0F,1F5DC,U+FE0F,2696,U+FE0F,1F9AF,1F517,26D3,U+FE0F,1FA9D,1F9F0,1F9F2,1FA9C,2697,U+FE0F,1F9EA,1F9EB,1F9EC,1F52C,1F52D,1F4E1,1F489,1FA78,1F48A,1FA79,1FA7C,1FA7A,1FA7B,1F6AA,1F6D7,1FA9E,1FA9F,1F6CF,U+FE0F,1F6CB,U+FE0F,1FA91,1F6BD,1FAA0,1F6BF,1F6C1,1FAA4,1FA92,1F9F4,1F9F7,1F9F9,1F9FA,1F9FB,1FAA3,1F9FC,1FAE7,1FAA5,1F9FD,1F9EF,1F6D2,1F6AC,26B0,U+FE0F,1FAA6,26B1,U+FE0F,1F9FF,1FAAC,1F5FF,1FAA7,1FAAA,1F3E7,1F6AE,1F6B0,267F,1F6B9,1F6BA,1F6BB,1F6BC,1F6BE,1F6C2,1F6C3,1F6C4,1F6C5,26A0,U+FE0F,1F6B8,26D4,1F6AB,1F6B3,1F6AD,1F6AF,1F6B1,1F6B7,1F4F5,1F51E,2622,U+FE0F,2623,U+FE0F,2B06,U+FE0F,2197,U+FE0F,27A1,U+FE0F,2198,U+FE0F,2B07,U+FE0F,2199,U+FE0F,2B05,U+FE0F,2196,U+FE0F,2195,U+FE0F,2194,U+FE0F,21A9,U+FE0F,21AA,U+FE0F,2934,U+FE0F,2935,U+FE0F,1F503,1F504,1F519,1F51A,1F51B,1F51C,1F51D,1F6D0,269B,U+FE0F,1F549,U+FE0F,2721,U+FE0F,2638,U+FE0F,262F,U+FE0F,271D,U+FE0F,2626,U+FE0F,262A,U+FE0F,262E,U+FE0F,1F54E,1F52F,1FAAF,2648,2649,264A,264B,264C,264D,264E,264F,2650,2651,2652,2653,26CE,1F500,1F501,1F502,25B6,U+FE0F,23E9,23ED,U+FE0F,23EF,U+FE0F,25C0,U+FE0F,23EA,23EE,U+FE0F,1F53C,23EB,1F53D,23EC,23F8,U+FE0F,23F9,U+FE0F,23FA,U+FE0F,23CF,U+FE0F,1F3A6,1F505,1F506,1F4F6,1F6DC,1F4F3,1F4F4,2640,U+FE0F,2642,U+FE0F,26A7,U+FE0F,2716,U+FE0F,2795,2796,2797,1F7F0,267E,U+FE0F,203C,U+FE0F,2049,U+FE0F,2753,2754,2755,2757,3030,U+FE0F,1F4B1,1F4B2,2695,U+FE0F,267B,U+FE0F,269C,U+FE0F,1F531,1F4DB,1F530,2B55,2705,2611,U+FE0F,2714,U+FE0F,274C,274E,27B0,27BF,303D,U+FE0F,2733,U+FE0F,2734,U+FE0F,2747,U+FE0F,00A9,U+FE0F,00AE,U+FE0F,2122,U+FE0F,0023,U+FE0F,U+20E3,002A,U+FE0F,U+20E3,0030,U+FE0F,U+20E3,0031,U+FE0F,U+20E3,0032,U+FE0F,U+20E3,0033,U+FE0F,U+20E3,0034,U+FE0F,U+20E3,0035,U+FE0F,U+20E3,0036,U+FE0F,U+20E3,0037,U+FE0F,U+20E3,0038,U+FE0F,U+20E3,0039,U+FE0F,U+20E3,1F51F,1F520,1F521,1F522,1F523,1F524,1F170,U+FE0F,1F18E,1F171,U+FE0F,1F191,1F192,1F193,2139,U+FE0F,1F194,24C2,U+FE0F,1F195,1F196,1F17E,U+FE0F,1F197,1F17F,U+FE0F,1F198,1F199,1F19A,1F201,1F202,U+FE0F,1F237,U+FE0F,1F236,1F22F,1F250,1F239,1F21A,1F232,1F251,1F238,1F234,1F233,3297,U+FE0F,3299,U+FE0F,1F23A,1F235,1F534,1F7E0,1F7E1,1F7E2,1F535,1F7E3,1F7E4,26AB,26AA,1F7E5,1F7E7,1F7E8,1F7E9,1F7E6,1F7EA,1F7EB,2B1B,2B1C,25FC,U+FE0F,25FB,U+FE0F,25FE,25FD,25AA,U+FE0F,25AB,U+FE0F,1F536,1F537,1F538,1F539,1F53A,1F53B,1F4A0,1F518,1F533,1F532,1F3C1,1F6A9,1F38C,1F3F4,1F3F3,U+FE0F,1F3F3,U+FE0F,U+200D,U+1F308,1F3F3,U+FE0F,U+200D,U+26A7,U+FE0F,1F3F4,U+200D,U+2620,U+FE0F,1F1E6,U+1F1E8,1F1E6,U+1F1E9,1F1E6,U+1F1EA,1F1E6,U+1F1EB,1F1E6,U+1F1EC,1F1E6,U+1F1EE,1F1E6,U+1F1F1,1F1E6,U+1F1F2,1F1E6,U+1F1F4,1F1E6,U+1F1F6,1F1E6,U+1F1F7,1F1E6,U+1F1F8,1F1E6,U+1F1F9,1F1E6,U+1F1FA,1F1E6,U+1F1FC,1F1E6,U+1F1FD,1F1E6,U+1F1FF,1F1E7,U+1F1E6,1F1E7,U+1F1E7,1F1E7,U+1F1E9,1F1E7,U+1F1EA,1F1E7,U+1F1EB,1F1E7,U+1F1EC,1F1E7,U+1F1ED,1F1E7,U+1F1EE,1F1E7,U+1F1EF,1F1E7,U+1F1F1,1F1E7,U+1F1F2,1F1E7,U+1F1F3,1F1E7,U+1F1F4,1F1E7,U+1F1F6,1F1E7,U+1F1F7,1F1E7,U+1F1F8,1F1E7,U+1F1F9,1F1E7,U+1F1FB,1F1E7,U+1F1FC,1F1E7,U+1F1FE,1F1E7,U+1F1FF,1F1E8,U+1F1E6,1F1E8,U+1F1E8,1F1E8,U+1F1E9,1F1E8,U+1F1EB,1F1E8,U+1F1EC,1F1E8,U+1F1ED,1F1E8,U+1F1EE,1F1E8,U+1F1F0,1F1E8,U+1F1F1,1F1E8,U+1F1F2,1F1E8,U+1F1F3,1F1E8,U+1F1F4,1F1E8,U+1F1F5,1F1E8,U+1F1F7,1F1E8,U+1F1FA,1F1E8,U+1F1FB,1F1E8,U+1F1FC,1F1E8,U+1F1FD,1F1E8,U+1F1FE,1F1E8,U+1F1FF,1F1E9,U+1F1EA,1F1E9,U+1F1EC,1F1E9,U+1F1EF,1F1E9,U+1F1F0,1F1E9,U+1F1F2,1F1E9,U+1F1F4,1F1E9,U+1F1FF,1F1EA,U+1F1E6,1F1EA,U+1F1E8,1F1EA,U+1F1EA,1F1EA,U+1F1EC,1F1EA,U+1F1ED,1F1EA,U+1F1F7,1F1EA,U+1F1F8,1F1EA,U+1F1F9,1F1EA,U+1F1FA,1F1EB,U+1F1EE,1F1EB,U+1F1EF,1F1EB,U+1F1F0,1F1EB,U+1F1F2,1F1EB,U+1F1F4,1F1EB,U+1F1F7,1F1EC,U+1F1E6,1F1EC,U+1F1E7,1F1EC,U+1F1E9,1F1EC,U+1F1EA,1F1EC,U+1F1EB,1F1EC,U+1F1EC,1F1EC,U+1F1ED,1F1EC,U+1F1EE,1F1EC,U+1F1F1,1F1EC,U+1F1F2,1F1EC,U+1F1F3,1F1EC,U+1F1F5,1F1EC,U+1F1F6,1F1EC,U+1F1F7,1F1EC,U+1F1F8,1F1EC,U+1F1F9,1F1EC,U+1F1FA,1F1EC,U+1F1FC,1F1EC,U+1F1FE,1F1ED,U+1F1F0,1F1ED,U+1F1F2,1F1ED,U+1F1F3,1F1ED,U+1F1F7,1F1ED,U+1F1F9,1F1ED,U+1F1FA,1F1EE,U+1F1E8,1F1EE,U+1F1E9,1F1EE,U+1F1EA,1F1EE,U+1F1F1,1F1EE,U+1F1F2,1F1EE,U+1F1F3,1F1EE,U+1F1F4,1F1EE,U+1F1F6,1F1EE,U+1F1F7,1F1EE,U+1F1F8,1F1EE,U+1F1F9,1F1EF,U+1F1EA,1F1EF,U+1F1F2,1F1EF,U+1F1F4,1F1EF,U+1F1F5,1F1F0,U+1F1EA,1F1F0,U+1F1EC,1F1F0,U+1F1ED,1F1F0,U+1F1EE,1F1F0,U+1F1F2,1F1F0,U+1F1F3,1F1F0,U+1F1F5,1F1F0,U+1F1F7,1F1F0,U+1F1FC,1F1F0,U+1F1FE,1F1F0,U+1F1FF,1F1F1,U+1F1E6,1F1F1,U+1F1E7,1F1F1,U+1F1E8,1F1F1,U+1F1EE,1F1F1,U+1F1F0,1F1F1,U+1F1F7,1F1F1,U+1F1F8,1F1F1,U+1F1F9,1F1F1,U+1F1FA,1F1F1,U+1F1FB,1F1F1,U+1F1FE,1F1F2,U+1F1E6,1F1F2,U+1F1E8,1F1F2,U+1F1E9,1F1F2,U+1F1EA,1F1F2,U+1F1EB,1F1F2,U+1F1EC,1F1F2,U+1F1ED,1F1F2,U+1F1F0,1F1F2,U+1F1F1,1F1F2,U+1F1F2,1F1F2,U+1F1F3,1F1F2,U+1F1F4,1F1F2,U+1F1F5,1F1F2,U+1F1F6,1F1F2,U+1F1F7,1F1F2,U+1F1F8,1F1F2,U+1F1F9,1F1F2,U+1F1FA,1F1F2,U+1F1FB,1F1F2,U+1F1FC,1F1F2,U+1F1FD,1F1F2,U+1F1FE,1F1F2,U+1F1FF,1F1F3,U+1F1E6,1F1F3,U+1F1E8,1F1F3,U+1F1EA,1F1F3,U+1F1EB,1F1F3,U+1F1EC,1F1F3,U+1F1EE,1F1F3,U+1F1F1,1F1F3,U+1F1F4,1F1F3,U+1F1F5,1F1F3,U+1F1F7,1F1F3,U+1F1FA,1F1F3,U+1F1FF,1F1F4,U+1F1F2,1F1F5,U+1F1E6,1F1F5,U+1F1EA,1F1F5,U+1F1EB,1F1F5,U+1F1EC,1F1F5,U+1F1ED,1F1F5,U+1F1F0,1F1F5,U+1F1F1,1F1F5,U+1F1F2,1F1F5,U+1F1F3,1F1F5,U+1F1F7,1F1F5,U+1F1F8,1F1F5,U+1F1F9,1F1F5,U+1F1FC,1F1F5,U+1F1FE,1F1F6,U+1F1E6,1F1F7,U+1F1EA,1F1F7,U+1F1F4,1F1F7,U+1F1F8,1F1F7,U+1F1FA,1F1F7,U+1F1FC,1F1F8,U+1F1E6,1F1F8,U+1F1E7,1F1F8,U+1F1E8,1F1F8,U+1F1E9,1F1F8,U+1F1EA,1F1F8,U+1F1EC,1F1F8,U+1F1ED,1F1F8,U+1F1EE,1F1F8,U+1F1EF,1F1F8,U+1F1F0,1F1F8,U+1F1F1,1F1F8,U+1F1F2,1F1F8,U+1F1F3,1F1F8,U+1F1F4,1F1F8,U+1F1F7,1F1F8,U+1F1F8,1F1F8,U+1F1F9,1F1F8,U+1F1FB,1F1F8,U+1F1FD,1F1F8,U+1F1FE,1F1F8,U+1F1FF,1F1F9,U+1F1E6,1F1F9,U+1F1E8,1F1F9,U+1F1E9,1F1F9,U+1F1EB,1F1F9,U+1F1EC,1F1F9,U+1F1ED,1F1F9,U+1F1EF,1F1F9,U+1F1F0,1F1F9,U+1F1F1,1F1F9,U+1F1F2,1F1F9,U+1F1F3,1F1F9,U+1F1F4,1F1F9,U+1F1F7,1F1F9,U+1F1F9,1F1F9,U+1F1FB,1F1F9,U+1F1FC,1F1F9,U+1F1FF,1F1FA,U+1F1E6,1F1FA,U+1F1EC,1F1FA,U+1F1F2,1F1FA,U+1F1F3,1F1FA,U+1F1F8,1F1FA,U+1F1FE,1F1FA,U+1F1FF,1F1FB,U+1F1E6,1F1FB,U+1F1E8,1F1FB,U+1F1EA,1F1FB,U+1F1EC,1F1FB,U+1F1EE,1F1FB,U+1F1F3,1F1FB,U+1F1FA,1F1FC,U+1F1EB,1F1FC,U+1F1F8,1F1FD,U+1F1F0,1F1FE,U+1F1EA,1F1FE,U+1F1F9,1F1FF,U+1F1E6,1F1FF,U+1F1F2,1F1FF,U+1F1FC,1F3F4,U+E0067,U+E0062,U+E0065,U+E006E,U+E0067,U+E007F Noto Color Emoji
+
+#: You can specify different fonts for the bold/italic/bold-italic
+#: variants. To get a full list of supported fonts use the `kitty
+#: +list-fonts` command. By default they are derived automatically, by
+#: the OSes font system. When bold_font or bold_italic_font is set to
+#: auto on macOS, the priority of bold fonts is semi-bold, bold,
+#: heavy. Setting them manually is useful for font families that have
+#: many weight variants like Book, Medium, Thick, etc. For example::
+
+#:     font_family      Operator Mono Book
+#:     bold_font        Operator Mono Medium
+#:     italic_font      Operator Mono Book Italic
+#:     bold_italic_font Operator Mono Medium Italic
+
+# font_size 11.0
+
+#: Font size (in pts)
+
+# force_ltr no
+
+#: kitty does not support BIDI (bidirectional text), however, for RTL
+#: scripts, words are automatically displayed in RTL. That is to say,
+#: in an RTL script, the words "HELLO WORLD" display in kitty as
+#: "WORLD HELLO", and if you try to select a substring of an RTL-
+#: shaped string, you will get the character that would be there had
+#: the string been LTR. For example, assuming the Hebrew word ירושלים,
+#: selecting the character that on the screen appears to be ם actually
+#: writes into the selection buffer the character י. kitty's default
+#: behavior is useful in conjunction with a filter to reverse the word
+#: order, however, if you wish to manipulate RTL glyphs, it can be
+#: very challenging to work with, so this option is provided to turn
+#: it off. Furthermore, this option can be used with the command line
+#: program GNU FriBidi <https://github.com/fribidi/fribidi#executable>
+#: to get BIDI support, because it will force kitty to always treat
+#: the text as LTR, which FriBidi expects for terminals.
+
+# symbol_map
+
+#: E.g. symbol_map U+E0A0-U+E0A3,U+E0C0-U+E0C7 PowerlineSymbols
+
+#: Map the specified Unicode codepoints to a particular font. Useful
+#: if you need special rendering for some symbols, such as for
+#: Powerline. Avoids the need for patched fonts. Each Unicode code
+#: point is specified in the form `U+<code point in hexadecimal>`. You
+#: can specify multiple code points, separated by commas and ranges
+#: separated by hyphens. This option can be specified multiple times.
+#: The syntax is::
+
+#:     symbol_map codepoints Font Family Name
+
+# symbol_map U+E5FA-U+E62B Symbols Nerd Font
+# # Devicons
+# symbol_map U+E700-U+E7C5 Symbols Nerd Font
+# # Font Awesome
+# symbol_map U+F000-U+F2E0 Symbols Nerd Font
+# # Font Awesome Extension
+# symbol_map U+E200-U+E2A9 Symbols Nerd Font
+# # Material Design Icons
+# symbol_map U+F500-U+FD46 Symbols Nerd Font
+# # Weather
+# symbol_map U+E300-U+E3EB Symbols Nerd Font
+# # Octicons
+# symbol_map U+F400-U+F4A8,U+2665,U+26A1,U+F27C Symbols Nerd Font
+# # Powerline Extra Symbols
+# symbol_map U+E0A3,U+E0B4-U+E0C8,U+E0CC-U+E0D2,U+E0D4 Symbols Nerd Font
+# # IEC Power Symbols
+# symbol_map U+23FB-U+23FE,U+2b58 Symbols Nerd Font
+# # Font Logos
+# symbol_map U+F300-U+F313 Symbols Nerd Font
+ # symbol_map U+1F321 Noto Color Emoji
+# # Pomicons
+# symbol_map U+E000-U+E00D Symbols Nerd Font
+
+# narrow_symbols
+
+#: E.g. narrow_symbols U+E0A0-U+E0A3,U+E0C0-U+E0C7 1
+
+#: Usually, for Private Use Unicode characters and some symbol/dingbat
+#: characters, if the character is followed by one or more spaces,
+#: kitty will use those extra cells to render the character larger, if
+#: the character in the font has a wide aspect ratio. Using this
+#: option you can force kitty to restrict the specified code points to
+#: render in the specified number of cells (defaulting to one cell).
+#: This option can be specified multiple times. The syntax is::
+
+#:     narrow_symbols codepoints [optionally the number of cells]
+
+# disable_ligatures never
+
+#: Choose how you want to handle multi-character ligatures. The
+#: default is to always render them. You can tell kitty to not render
+#: them when the cursor is over them by using cursor to make editing
+#: easier, or have kitty never render them at all by using always, if
+#: you don't like them. The ligature strategy can be set per-window
+#: either using the kitty remote control facility or by defining
+#: shortcuts for it in kitty.conf, for example::
+
+#:     map alt+1 disable_ligatures_in active always
+#:     map alt+2 disable_ligatures_in all never
+#:     map alt+3 disable_ligatures_in tab cursor
+
+#: Note that this refers to programming ligatures, typically
+#: implemented using the calt OpenType feature. For disabling general
+#: ligatures, use the font_features option.
+
+# font_features
+
+#: E.g. font_features none
+
+#: Choose exactly which OpenType features to enable or disable. This
+#: is useful as some fonts might have features worthwhile in a
+#: terminal. For example, Fira Code includes a discretionary feature,
+#: zero, which in that font changes the appearance of the zero (0), to
+#: make it more easily distinguishable from Ø. Fira Code also includes
+#: other discretionary features known as Stylistic Sets which have the
+#: tags ss01 through ss20.
+
+#: For the exact syntax to use for individual features, see the
+#: HarfBuzz documentation <https://harfbuzz.github.io/harfbuzz-hb-
+#: common.html#hb-feature-from-string>.
+
+#: Note that this code is indexed by PostScript name, and not the font
+#: family. This allows you to define very precise feature settings;
+#: e.g. you can disable a feature in the italic font but not in the
+#: regular font.
+
+#: On Linux, font features are first read from the FontConfig database
+#: and then this option is applied, so they can be configured in a
+#: single, central place.
+
+#: To get the PostScript name for a font, use `kitty +list-fonts
+#: --psnames`:
+
+#: .. code-block:: sh
+
+#:     $ kitty +list-fonts --psnames | grep Fira
+#:     Fira Code
+#:     Fira Code Bold (FiraCode-Bold)
+#:     Fira Code Light (FiraCode-Light)
+#:     Fira Code Medium (FiraCode-Medium)
+#:     Fira Code Regular (FiraCode-Regular)
+#:     Fira Code Retina (FiraCode-Retina)
+
+#: The part in brackets is the PostScript name.
+
+#: Enable alternate zero and oldstyle numerals::
+
+#:     font_features FiraCode-Retina +zero +onum
+
+#: Enable only alternate zero in the bold font::
+
+#:     font_features FiraCode-Bold +zero
+
+#: Disable the normal ligatures, but keep the calt feature which (in
+#: this font) breaks up monotony::
+
+#:     font_features TT2020StyleB-Regular -liga +calt
+
+#: In conjunction with force_ltr, you may want to disable Arabic
+#: shaping entirely, and only look at their isolated forms if they
+#: show up in a document. You can do this with e.g.::
+
+#:     font_features UnifontMedium +isol -medi -fina -init
+
+# modify_font
+
+#: Modify font characteristics such as the position or thickness of
+#: the underline and strikethrough. The modifications can have the
+#: suffix px for pixels or % for percentage of original value. No
+#: suffix means use pts. For example::
+
+#:     modify_font underline_position -2
+#:     modify_font underline_thickness 150%
+#:     modify_font strikethrough_position 2px
+
+#: Additionally, you can modify the size of the cell in which each
+#: font glyph is rendered and the baseline at which the glyph is
+#: placed in the cell. For example::
+
+#:     modify_font cell_width 80%
+#:     modify_font cell_height -2px
+#:     modify_font baseline 3
+
+#: Note that modifying the baseline will automatically adjust the
+#: underline and strikethrough positions by the same amount.
+#: Increasing the baseline raises glyphs inside the cell and
+#: decreasing it lowers them. Decreasing the cell size might cause
+#: rendering artifacts, so use with care.
+
+# box_drawing_scale 0.001, 1, 1.5, 2
+
+#: The sizes of the lines used for the box drawing Unicode characters.
+#: These values are in pts. They will be scaled by the monitor DPI to
+#: arrive at a pixel value. There must be four values corresponding to
+#: thin, normal, thick, and very thick lines.
+
+# undercurl_style thin-sparse
+
+#: The style with which undercurls are rendered. This option takes the
+#: form (thin|thick)-(sparse|dense). Thin and thick control the
+#: thickness of the undercurl. Sparse and dense control how often the
+#: curl oscillates. With sparse the curl will peak once per character,
+#: with dense twice.
+
+# text_composition_strategy platform
+
+#: Control how kitty composites text glyphs onto the background color.
+#: The default value of platform tries for text rendering as close to
+#: "native" for the platform kitty is running on as possible.
+
+#: A value of legacy uses the old (pre kitty 0.28) strategy for how
+#: glyphs are composited. This will make dark text on light
+#: backgrounds look thicker and light text on dark backgrounds
+#: thinner. It might also make some text appear like the strokes are
+#: uneven.
+
+#: You can fine tune the actual contrast curve used for glyph
+#: composition by specifying up to two space-separated numbers for
+#: this setting.
+
+#: The first number is the gamma adjustment, which controls the
+#: thickness of dark text on light backgrounds. Increasing the value
+#: will make text appear thicker. The default value for this is 1.0 on
+#: Linux and 1.7 on macOS. Valid values are 0.01 and above. The result
+#: is scaled based on the luminance difference between the background
+#: and the foreground. Dark text on light backgrounds receives the
+#: full impact of the curve while light text on dark backgrounds is
+#: affected very little.
+
+#: The second number is an additional multiplicative contrast. It is
+#: percentage ranging from 0 to 100. The default value is 0 on Linux
+#: and 30 on macOS.
+
+#: If you wish to achieve similar looking thickness in light and dark
+#: themes, a good way to experiment is start by setting the value to
+#: 1.0 0 and use a dark theme. Then adjust the second parameter until
+#: it looks good. Then switch to a light theme and adjust the first
+#: parameter until the perceived thickness matches the dark theme.
+
+# text_fg_override_threshold 0
+
+#: The minimum accepted difference in luminance between the foreground
+#: and background color, below which kitty will override the
+#: foreground color. It is percentage ranging from 0 to 100. If the
+#: difference in luminance of the foreground and background is below
+#: this threshold, the foreground color will be set to white if the
+#: background is dark or black if the background is light. The default
+#: value is 0, which means no overriding is performed. Useful when
+#: working with applications that use colors that do not contrast well
+#: with your preferred color scheme.
+
+#: }}}
+
+#: Cursor customization {{{
+
+# cursor #cccccc
+
+#: Default cursor color. If set to the special value none the cursor
+#: will be rendered with a "reverse video" effect. It's color will be
+#: the color of the text in the cell it is over and the text will be
+#: rendered with the background color of the cell. Note that if the
+#: program running in the terminal sets a cursor color, this takes
+#: precedence. Also, the cursor colors are modified if the cell
+#: background and foreground colors have very low contrast.
+
+# cursor_text_color #111111
+
+#: The color of text under the cursor. If you want it rendered with
+#: the background color of the cell underneath instead, use the
+#: special keyword: background. Note that if cursor is set to none
+#: then this option is ignored.
+
+# cursor_shape block
+
+#: The cursor shape can be one of block, beam, underline. Note that
+#: when reloading the config this will be changed only if the cursor
+#: shape has not been set by the program running in the terminal. This
+#: sets the default cursor shape, applications running in the terminal
+#: can override it. In particular, shell integration
+#: <https://sw.kovidgoyal.net/kitty/shell-integration/> in kitty sets
+#: the cursor shape to beam at shell prompts. You can avoid this by
+#: setting shell_integration to no-cursor.
+
+# cursor_beam_thickness 1.5
+
+#: The thickness of the beam cursor (in pts).
+
+# cursor_underline_thickness 2.0
+
+#: The thickness of the underline cursor (in pts).
+
+# cursor_blink_interval -1
+
+#: The interval to blink the cursor (in seconds). Set to zero to
+#: disable blinking. Negative values mean use system default. Note
+#: that the minimum interval will be limited to repaint_delay.
+
+# cursor_stop_blinking_after 15.0
+
+#: Stop blinking cursor after the specified number of seconds of
+#: keyboard inactivity. Set to zero to never stop blinking.
+
+#: }}}
+
+#: Scrollback {{{
+
+# scrollback_lines 2000
+
+#: Number of lines of history to keep in memory for scrolling back.
+#: Memory is allocated on demand. Negative numbers are (effectively)
+#: infinite scrollback. Note that using very large scrollback is not
+#: recommended as it can slow down performance of the terminal and
+#: also use large amounts of RAM. Instead, consider using
+#: scrollback_pager_history_size. Note that on config reload if this
+#: is changed it will only affect newly created windows, not existing
+#: ones.
+
+# scrollback_pager less --chop-long-lines --RAW-CONTROL-CHARS +INPUT_LINE_NUMBER
+
+#: Program with which to view scrollback in a new window. The
+#: scrollback buffer is passed as STDIN to this program. If you change
+#: it, make sure the program you use can handle ANSI escape sequences
+#: for colors and text formatting. INPUT_LINE_NUMBER in the command
+#: line above will be replaced by an integer representing which line
+#: should be at the top of the screen. Similarly CURSOR_LINE and
+#: CURSOR_COLUMN will be replaced by the current cursor position or
+#: set to 0 if there is no cursor, for example, when showing the last
+#: command output.
+
+# scrollback_pager_history_size 0
+
+#: Separate scrollback history size (in MB), used only for browsing
+#: the scrollback buffer with pager. This separate buffer is not
+#: available for interactive scrolling but will be piped to the pager
+#: program when viewing scrollback buffer in a separate window. The
+#: current implementation stores the data in UTF-8, so approximately
+#: 10000 lines per megabyte at 100 chars per line, for pure ASCII,
+#: unformatted text. A value of zero or less disables this feature.
+#: The maximum allowed size is 4GB. Note that on config reload if this
+#: is changed it will only affect newly created windows, not existing
+#: ones.
+
+# scrollback_fill_enlarged_window no
+
+#: Fill new space with lines from the scrollback buffer after
+#: enlarging a window.
+
+# wheel_scroll_multiplier 10.0
+
+#: Multiplier for the number of lines scrolled by the mouse wheel.
+#: Note that this is only used for low precision scrolling devices,
+#: not for high precision scrolling devices on platforms such as macOS
+#: and Wayland. Use negative numbers to change scroll direction. See
+#: also wheel_scroll_min_lines.
+
+# wheel_scroll_min_lines 1
+
+#: The minimum number of lines scrolled by the mouse wheel. The scroll
+#: multiplier wheel_scroll_multiplier only takes effect after it
+#: reaches this number. Note that this is only used for low precision
+#: scrolling devices like wheel mice that scroll by very small amounts
+#: when using the wheel. With a negative number, the minimum number of
+#: lines will always be added.
+
+touch_scroll_multiplier 1.0
+
+#: Multiplier for the number of lines scrolled by a touchpad. Note
+#: that this is only used for high precision scrolling devices on
+#: platforms such as macOS and Wayland. Use negative numbers to change
+#: scroll direction.
+
+#: }}}
+
+#: Mouse {{{
+
+# mouse_hide_wait 3.0
+
+#: Hide mouse cursor after the specified number of seconds of the
+#: mouse not being used. Set to zero to disable mouse cursor hiding.
+#: Set to a negative value to hide the mouse cursor immediately when
+#: typing text. Disabled by default on macOS as getting it to work
+#: robustly with the ever-changing sea of bugs that is Cocoa is too
+#: much effort.
+
+# url_color #0087bd
+# url_style curly
+
+#: The color and style for highlighting URLs on mouse-over. url_style
+#: can be one of: none, straight, double, curly, dotted, dashed.
+
+# open_url_with default
+
+#: The program to open clicked URLs. The special value default with
+#: first look for any URL handlers defined via the open_actions
+#: <https://sw.kovidgoyal.net/kitty/open_actions/> facility and if non
+#: are found, it will use the Operating System's default URL handler
+#: (open on macOS and xdg-open on Linux).
+
+# url_prefixes file ftp ftps gemini git gopher http https irc ircs kitty mailto news sftp ssh
+
+#: The set of URL prefixes to look for when detecting a URL under the
+#: mouse cursor.
+
+# detect_urls yes
+
+#: Detect URLs under the mouse. Detected URLs are highlighted with an
+#: underline and the mouse cursor becomes a hand over them. Even if
+#: this option is disabled, URLs are still clickable.
+
+# url_excluded_characters
+
+#: Additional characters to be disallowed from URLs, when detecting
+#: URLs under the mouse cursor. By default, all characters that are
+#: legal in URLs are allowed. Additionally, newlines are allowed (but
+#: stripped). This is to accommodate programs such as mutt that add
+#: hard line breaks even for continued lines. \n can be added to this
+#: option to disable this behavior. Special characters can be
+#: specified using backslash escapes, to specify a backslash use a
+#: double backslash.
+
+# show_hyperlink_targets no
+
+#: When the mouse hovers over a terminal hyperlink, show the actual
+#: URL that will be activated when the hyperlink is clicked.
+
+# copy_on_select no
+
+#: Copy to clipboard or a private buffer on select. With this set to
+#: clipboard, selecting text with the mouse will cause the text to be
+#: copied to clipboard. Useful on platforms such as macOS that do not
+#: have the concept of primary selection. You can instead specify a
+#: name such as a1 to copy to a private kitty buffer. Map a shortcut
+#: with the paste_from_buffer action to paste from this private
+#: buffer. For example::
+
+#:     copy_on_select a1
+#:     map shift+cmd+v paste_from_buffer a1
+
+#: Note that copying to the clipboard is a security risk, as all
+#: programs, including websites open in your browser can read the
+#: contents of the system clipboard.
+
+# paste_actions quote-urls-at-prompt
+
+#: A comma separated list of actions to take when pasting text into
+#: the terminal. The supported paste actions are:
+
+#: quote-urls-at-prompt:
+#:     If the text being pasted is a URL and the cursor is at a shell prompt,
+#:     automatically quote the URL (needs shell_integration).
+#: confirm:
+#:     Confirm the paste if bracketed paste mode is not active or there is
+#:     a large amount of text being pasted.
+#: filter:
+#:     Run the filter_paste() function from the file paste-actions.py in
+#:     the kitty config directory on the pasted text. The text returned by the
+#:     function will be actually pasted.
+
+# strip_trailing_spaces never
+
+#: Remove spaces at the end of lines when copying to clipboard. A
+#: value of smart will do it when using normal selections, but not
+#: rectangle selections. A value of always will always do it.
+
+# select_by_word_characters @-./_~?&=%+#
+
+#: Characters considered part of a word when double clicking. In
+#: addition to these characters any character that is marked as an
+#: alphanumeric character in the Unicode database will be matched.
+
+# select_by_word_characters_forward
+
+#: Characters considered part of a word when extending the selection
+#: forward on double clicking. In addition to these characters any
+#: character that is marked as an alphanumeric character in the
+#: Unicode database will be matched.
+
+#: If empty (default) select_by_word_characters will be used for both
+#: directions.
+
+# click_interval -1.0
+
+#: The interval between successive clicks to detect double/triple
+#: clicks (in seconds). Negative numbers will use the system default
+#: instead, if available, or fallback to 0.5.
+
+# focus_follows_mouse no
+
+#: Set the active window to the window under the mouse when moving the
+#: mouse around.
+
+# pointer_shape_when_grabbed arrow
+
+#: The shape of the mouse pointer when the program running in the
+#: terminal grabs the mouse. Valid values are: arrow, beam and hand.
+
+# default_pointer_shape beam
+
+#: The default shape of the mouse pointer. Valid values are: arrow,
+#: beam and hand.
+
+# pointer_shape_when_dragging beam
+
+#: The default shape of the mouse pointer when dragging across text.
+#: Valid values are: arrow, beam and hand.
+
+#: Mouse actions {{{
+
+#: Mouse buttons can be mapped to perform arbitrary actions. The
+#: syntax is:
+
+#: .. code-block:: none
+
+#:     mouse_map button-name event-type modes action
+
+#: Where button-name is one of left, middle, right, b1 ... b8 with
+#: added keyboard modifiers. For example: ctrl+shift+left refers to
+#: holding the Ctrl+Shift keys while clicking with the left mouse
+#: button. The value b1 ... b8 can be used to refer to up to eight
+#: buttons on a mouse.
+
+#: event-type is one of press, release, doublepress, triplepress,
+#: click, doubleclick. modes indicates whether the action is performed
+#: when the mouse is grabbed by the program running in the terminal,
+#: or not. The values are grabbed or ungrabbed or a comma separated
+#: combination of them. grabbed refers to when the program running in
+#: the terminal has requested mouse events. Note that the click and
+#: double click events have a delay of click_interval to disambiguate
+#: from double and triple presses.
+
+#: You can run kitty with the kitty --debug-input command line option
+#: to see mouse events. See the builtin actions below to get a sense
+#: of what is possible.
+
+#: If you want to unmap an action, map it to no_op. For example, to
+#: disable opening of URLs with a plain click::
+
+#:     mouse_map left click ungrabbed no_op
+
+#: See all the mappable actions including mouse actions here
+#: <https://sw.kovidgoyal.net/kitty/actions/>.
+
+#: .. note::
+#:     Once a selection is started, releasing the button that started it will
+#:     automatically end it and no release event will be dispatched.
+
+# clear_all_mouse_actions no
+
+#: Remove all mouse action definitions up to this point. Useful, for
+#: instance, to remove the default mouse actions.
+
+#: Click the link under the mouse or move the cursor
+
+# mouse_map left click ungrabbed mouse_handle_click selection link prompt
+
+#::  First check for a selection and if one exists do nothing. Then
+#::  check for a link under the mouse cursor and if one exists, click
+#::  it. Finally check if the click happened at the current shell
+#::  prompt and if so, move the cursor to the click location. Note
+#::  that this requires shell integration
+#::  <https://sw.kovidgoyal.net/kitty/shell-integration/> to work.
+
+#: Click the link under the mouse or move the cursor even when grabbed
+
+# mouse_map shift+left click grabbed,ungrabbed mouse_handle_click selection link prompt
+
+#::  Same as above, except that the action is performed even when the
+#::  mouse is grabbed by the program running in the terminal.
+
+#: Click the link under the mouse cursor
+
+# mouse_map ctrl+shift+left release grabbed,ungrabbed mouse_handle_click link
+
+#::  Variant with Ctrl+Shift is present because the simple click based
+#::  version has an unavoidable delay of click_interval, to
+#::  disambiguate clicks from double clicks.
+
+#: Discard press event for link click
+
+# mouse_map ctrl+shift+left press grabbed discard_event
+
+#::  Prevent this press event from being sent to the program that has
+#::  grabbed the mouse, as the corresponding release event is used to
+#::  open a URL.
+
+#: Paste from the primary selection
+
+# mouse_map middle release ungrabbed paste_from_selection
+
+#: Start selecting text
+
+# mouse_map left press ungrabbed mouse_selection normal
+
+#: Start selecting text in a rectangle
+
+# mouse_map ctrl+alt+left press ungrabbed mouse_selection rectangle
+
+#: Select a word
+
+# mouse_map left doublepress ungrabbed mouse_selection word
+
+#: Select a line
+
+# mouse_map left triplepress ungrabbed mouse_selection line
+
+#: Select line from point
+
+# mouse_map ctrl+alt+left triplepress ungrabbed mouse_selection line_from_point
+
+#::  Select from the clicked point to the end of the line.
+
+#: Extend the current selection
+
+# mouse_map right press ungrabbed mouse_selection extend
+
+#::  If you want only the end of the selection to be moved instead of
+#::  the nearest boundary, use move-end instead of extend.
+
+#: Paste from the primary selection even when grabbed
+
+# mouse_map shift+middle release ungrabbed,grabbed paste_selection
+# mouse_map shift+middle press grabbed discard_event
+
+#: Start selecting text even when grabbed
+
+# mouse_map shift+left press ungrabbed,grabbed mouse_selection normal
+
+#: Start selecting text in a rectangle even when grabbed
+
+# mouse_map ctrl+shift+alt+left press ungrabbed,grabbed mouse_selection rectangle
+
+#: Select a word even when grabbed
+
+# mouse_map shift+left doublepress ungrabbed,grabbed mouse_selection word
+
+#: Select a line even when grabbed
+
+# mouse_map shift+left triplepress ungrabbed,grabbed mouse_selection line
+
+#: Select line from point even when grabbed
+
+# mouse_map ctrl+shift+alt+left triplepress ungrabbed,grabbed mouse_selection line_from_point
+
+#::  Select from the clicked point to the end of the line even when
+#::  grabbed.
+
+#: Extend the current selection even when grabbed
+
+# mouse_map shift+right press ungrabbed,grabbed mouse_selection extend
+
+#: Show clicked command output in pager
+
+# mouse_map ctrl+shift+right press ungrabbed mouse_show_command_output
+
+#::  Requires shell integration
+#::  <https://sw.kovidgoyal.net/kitty/shell-integration/> to work.
+
+#: }}}
+
+#: }}}
+
+#: Performance tuning {{{
+
+# repaint_delay 10
+
+#: Delay between screen updates (in milliseconds). Decreasing it,
+#: increases frames-per-second (FPS) at the cost of more CPU usage.
+#: The default value yields ~100 FPS which is more than sufficient for
+#: most uses. Note that to actually achieve 100 FPS, you have to
+#: either set sync_to_monitor to no or use a monitor with a high
+#: refresh rate. Also, to minimize latency when there is pending input
+#: to be processed, this option is ignored.
+
+# input_delay 3
+
+#: Delay before input from the program running in the terminal is
+#: processed (in milliseconds). Note that decreasing it will increase
+#: responsiveness, but also increase CPU usage and might cause flicker
+#: in full screen programs that redraw the entire screen on each loop,
+#: because kitty is so fast that partial screen updates will be drawn.
+
+# sync_to_monitor yes
+
+#: Sync screen updates to the refresh rate of the monitor. This
+#: prevents screen tearing
+#: <https://en.wikipedia.org/wiki/Screen_tearing> when scrolling.
+#: However, it limits the rendering speed to the refresh rate of your
+#: monitor. With a very high speed mouse/high keyboard repeat rate,
+#: you may notice some slight input latency. If so, set this to no.
+
+#: }}}
+
+#: Terminal bell {{{
+
+# enable_audio_bell yes
+
+#: The audio bell. Useful to disable it in environments that require
+#: silence.
+
+# visual_bell_duration 0.0
+
+#: The visual bell duration (in seconds). Flash the screen when a bell
+#: occurs for the specified number of seconds. Set to zero to disable.
+
+# visual_bell_color none
+
+#: The color used by visual bell. Set to none will fall back to
+#: selection background color. If you feel that the visual bell is too
+#: bright, you can set it to a darker color.
+
+# window_alert_on_bell yes
+
+#: Request window attention on bell. Makes the dock icon bounce on
+#: macOS or the taskbar flash on linux.
+
+# bell_on_tab "🔔 "
+
+#: Some text or a Unicode symbol to show on the tab if a window in the
+#: tab that does not have focus has a bell. If you want to use leading
+#: or trailing spaces, surround the text with quotes. See
+#: tab_title_template for how this is rendered.
+
+#: For backwards compatibility, values of yes, y and true are
+#: converted to the default bell symbol and no, n, false and none are
+#: converted to the empty string.
+
+# command_on_bell none
+
+#: Program to run when a bell occurs. The environment variable
+#: KITTY_CHILD_CMDLINE can be used to get the program running in the
+#: window in which the bell occurred.
+
+# bell_path none
+
+#: Path to a sound file to play as the bell sound. If set to none, the
+#: system default bell sound is used. Must be in a format supported by
+#: the operating systems sound API, such as WAV or OGA on Linux
+#: (libcanberra) or AIFF, MP3 or WAV on macOS (NSSound)
+
+# linux_bell_theme __custom
+
+#: The XDG Sound Theme kitty will use to play the bell sound. Defaults
+#: to the custom theme name used by GNOME and Budgie, falling back to
+#: the default freedesktop theme if it does not exist. This option may
+#: be removed if Linux ever provides desktop-agnostic support for
+#: setting system sound themes.
+
+#: }}}
+
+#: Window layout {{{
+
+# remember_window_size  yes
+# initial_window_width  640
+# initial_window_height 400
+
+#: If enabled, the OS Window size will be remembered so that new
+#: instances of kitty will have the same size as the previous
+#: instance. If disabled, the OS Window will initially have size
+#: configured by initial_window_width/height, in pixels. You can use a
+#: suffix of "c" on the width/height values to have them interpreted
+#: as number of cells instead of pixels.
+
+# enabled_layouts *
+
+#: The enabled window layouts. A comma separated list of layout names.
+#: The special value all means all layouts. The first listed layout
+#: will be used as the startup layout. Default configuration is all
+#: layouts in alphabetical order. For a list of available layouts, see
+#: the layouts <https://sw.kovidgoyal.net/kitty/overview/#layouts>.
+
+# window_resize_step_cells 2
+# window_resize_step_lines 2
+
+#: The step size (in units of cell width/cell height) to use when
+#: resizing kitty windows in a layout with the shortcut
+#: start_resizing_window. The cells value is used for horizontal
+#: resizing, and the lines value is used for vertical resizing.
+
+# window_border_width 0.5pt
+
+#: The width of window borders. Can be either in pixels (px) or pts
+#: (pt). Values in pts will be rounded to the nearest number of pixels
+#: based on screen resolution. If not specified, the unit is assumed
+#: to be pts. Note that borders are displayed only when more than one
+#: window is visible. They are meant to separate multiple windows.
+
+# draw_minimal_borders yes
+
+#: Draw only the minimum borders needed. This means that only the
+#: borders that separate the window from a neighbor are drawn. Note
+#: that setting a non-zero window_margin_width overrides this and
+#: causes all borders to be drawn.
+
+# window_margin_width 0
+
+#: The window margin (in pts) (blank area outside the border). A
+#: single value sets all four sides. Two values set the vertical and
+#: horizontal sides. Three values set top, horizontal and bottom. Four
+#: values set top, right, bottom and left.
+
+# single_window_margin_width -1
+
+#: The window margin to use when only a single window is visible (in
+#: pts). Negative values will cause the value of window_margin_width
+#: to be used instead. A single value sets all four sides. Two values
+#: set the vertical and horizontal sides. Three values set top,
+#: horizontal and bottom. Four values set top, right, bottom and left.
+
+window_padding_width 4
+
+#: The window padding (in pts) (blank area between the text and the
+#: window border). A single value sets all four sides. Two values set
+#: the vertical and horizontal sides. Three values set top, horizontal
+#: and bottom. Four values set top, right, bottom and left.
+
+# placement_strategy center
+
+#: When the window size is not an exact multiple of the cell size, the
+#: cell area of the terminal window will have some extra padding on
+#: the sides. You can control how that padding is distributed with
+#: this option. Using a value of center means the cell area will be
+#: placed centrally. A value of top-left means the padding will be
+#: only at the bottom and right edges.
+
+# active_border_color #00ff00
+
+#: The color for the border of the active window. Set this to none to
+#: not draw borders around the active window.
+
+# inactive_border_color #cccccc
+
+#: The color for the border of inactive windows.
+
+# bell_border_color #ff5a00
+
+#: The color for the border of inactive windows in which a bell has
+#: occurred.
+
+# inactive_text_alpha 1.0
+
+#: Fade the text in inactive windows by the specified amount (a number
+#: between zero and one, with zero being fully faded).
+
+# hide_window_decorations no
+
+#: Hide the window decorations (title-bar and window borders) with
+#: yes. On macOS, titlebar-only and titlebar-and-corners can be used
+#: to only hide the titlebar and the rounded corners. Whether this
+#: works and exactly what effect it has depends on the window
+#: manager/operating system. Note that the effects of changing this
+#: option when reloading config are undefined. When using titlebar-
+#: only, it is useful to also set window_margin_width and
+#: placement_strategy to prevent the rounded corners from clipping
+#: text. Or use titlebar-and-corners.
+
+# window_logo_path none
+
+#: Path to a logo image. Must be in PNG format. Relative paths are
+#: interpreted relative to the kitty config directory. The logo is
+#: displayed in a corner of every kitty window. The position is
+#: controlled by window_logo_position. Individual windows can be
+#: configured to have different logos either using the launch action
+#: or the remote control <https://sw.kovidgoyal.net/kitty/remote-
+#: control/> facility.
+
+# window_logo_position bottom-right
+
+#: Where to position the window logo in the window. The value can be
+#: one of: top-left, top, top-right, left, center, right, bottom-left,
+#: bottom, bottom-right.
+
+# window_logo_alpha 0.5
+
+#: The amount the logo should be faded into the background. With zero
+#: being fully faded and one being fully opaque.
+
+# resize_debounce_time 0.1 0.5
+
+#: The time to wait before redrawing the screen during a live resize
+#: of the OS window, when no new resize events have been received,
+#: i.e. when resizing is either paused or finished. On platforms such
+#: as macOS, where the operating system sends events corresponding to
+#: the start and end of a live resize, the second number is used for
+#: redraw-after-pause since kitty can distinguish between a pause and
+#: end of resizing.  On such systems the first number is ignored and
+#: redraw is immediate after end of resize.  On other systems the
+#: first number is used so that kitty is "ready" quickly after the end
+#: of resizing, while not also continuously redrawing, to save energy.
+
+# resize_in_steps no
+
+#: Resize the OS window in steps as large as the cells, instead of
+#: with the usual pixel accuracy. Combined with initial_window_width
+#: and initial_window_height in number of cells, this option can be
+#: used to keep the margins as small as possible when resizing the OS
+#: window. Note that this does not currently work on Wayland.
+
+# visual_window_select_characters 1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+#: The list of characters for visual window selection. For example,
+#: for selecting a window to focus on with focus_visible_window. The
+#: value should be a series of unique numbers or alphabets, case
+#: insensitive, from the set 0-9A-Z\-=[];',./\\`. Specify your
+#: preference as a string of characters.
+
+# confirm_os_window_close -1
+
+#: Ask for confirmation when closing an OS window or a tab with at
+#: least this number of kitty windows in it by window manager (e.g.
+#: clicking the window close button or pressing the operating system
+#: shortcut to close windows) or by the close_tab action. A value of
+#: zero disables confirmation. This confirmation also applies to
+#: requests to quit the entire application (all OS windows, via the
+#: quit action). Negative values are converted to positive ones,
+#: however, with shell_integration enabled, using negative values
+#: means windows sitting at a shell prompt are not counted, only
+#: windows where some command is currently running. Note that if you
+#: want confirmation when closing individual windows, you can map the
+#: close_window_with_confirmation action.
+
+#: }}}
+
+#: Tab bar {{{
+
+# tab_bar_edge bottom
+
+#: The edge to show the tab bar on, top or bottom.
+
+# tab_bar_margin_width 0.0
+
+#: The margin to the left and right of the tab bar (in pts).
+
+# tab_bar_margin_height 0.0 0.0
+
+#: The margin above and below the tab bar (in pts). The first number
+#: is the margin between the edge of the OS Window and the tab bar.
+#: The second number is the margin between the tab bar and the
+#: contents of the current tab.
+
+# tab_bar_style fade
+
+#: The tab bar style, can be one of:
+
+#: fade
+#:     Each tab's edges fade into the background color. (See also tab_fade)
+#: slant
+#:     Tabs look like the tabs in a physical file.
+#: separator
+#:     Tabs are separated by a configurable separator. (See also
+#:     tab_separator)
+#: powerline
+#:     Tabs are shown as a continuous line with "fancy" separators.
+#:     (See also tab_powerline_style)
+#: custom
+#:     A user-supplied Python function called draw_tab is loaded from the file
+#:     tab_bar.py in the kitty config directory. For examples of how to
+#:     write such a function, see the functions named draw_tab_with_* in
+#:     kitty's source code: kitty/tab_bar.py. See also
+#:     this discussion <https://github.com/kovidgoyal/kitty/discussions/4447>
+#:     for examples from kitty users.
+#: hidden
+#:     The tab bar is hidden. If you use this, you might want to create
+#:     a mapping for the select_tab action which presents you with a list of
+#:     tabs and allows for easy switching to a tab.
+
+# tab_bar_align left
+
+#: The horizontal alignment of the tab bar, can be one of: left,
+#: center, right.
+
+# tab_bar_min_tabs 2
+
+#: The minimum number of tabs that must exist before the tab bar is
+#: shown.
+
+# tab_switch_strategy previous
+
+#: The algorithm to use when switching to a tab when the current tab
+#: is closed. The default of previous will switch to the last used
+#: tab. A value of left will switch to the tab to the left of the
+#: closed tab. A value of right will switch to the tab to the right of
+#: the closed tab. A value of last will switch to the right-most tab.
+
+# tab_fade 0.25 0.5 0.75 1
+
+#: Control how each tab fades into the background when using fade for
+#: the tab_bar_style. Each number is an alpha (between zero and one)
+#: that controls how much the corresponding cell fades into the
+#: background, with zero being no fade and one being full fade. You
+#: can change the number of cells used by adding/removing entries to
+#: this list.
+
+# tab_separator " ┇"
+
+#: The separator between tabs in the tab bar when using separator as
+#: the tab_bar_style.
+
+# tab_powerline_style angled
+
+#: The powerline separator style between tabs in the tab bar when
+#: using powerline as the tab_bar_style, can be one of: angled,
+#: slanted, round.
+
+# tab_activity_symbol none
+
+#: Some text or a Unicode symbol to show on the tab if a window in the
+#: tab that does not have focus has some activity. If you want to use
+#: leading or trailing spaces, surround the text with quotes. See
+#: tab_title_template for how this is rendered.
+
+# tab_title_max_length 0
+
+#: The maximum number of cells that can be used to render the text in
+#: a tab. A value of zero means that no limit is applied.
+
+# tab_title_template "{fmt.fg.red}{bell_symbol}{activity_symbol}{fmt.fg.tab}{title}"
+
+#: A template to render the tab title. The default just renders the
+#: title with optional symbols for bell and activity. If you wish to
+#: include the tab-index as well, use something like: {index}:{title}.
+#: Useful if you have shortcuts mapped for goto_tab N. If you prefer
+#: to see the index as a superscript, use {sup.index}. All data
+#: available is:
+
+#: title
+#:     The current tab title.
+#: index
+#:     The tab index usable with goto_tab N goto_tab shortcuts.
+#: layout_name
+#:     The current layout name.
+#: num_windows
+#:     The number of windows in the tab.
+#: num_window_groups
+#:     The number of window groups (a window group is a window and all of its overlay windows) in the tab.
+#: tab.active_wd
+#:     The working directory of the currently active window in the tab
+#:     (expensive, requires syscall). Use active_oldest_wd to get
+#:     the directory of the oldest foreground process rather than the newest.
+#: tab.active_exe
+#:     The name of the executable running in the foreground of the currently
+#:     active window in the tab (expensive, requires syscall). Use
+#:     active_oldest_exe for the oldest foreground process.
+#: max_title_length
+#:     The maximum title length available.
+
+#: Note that formatting is done by Python's string formatting
+#: machinery, so you can use, for instance, {layout_name[:2].upper()}
+#: to show only the first two letters of the layout name, upper-cased.
+#: If you want to style the text, you can use styling directives, for
+#: example:
+#: `{fmt.fg.red}red{fmt.fg.tab}normal{fmt.bg._00FF00}greenbg{fmt.bg.tab}`.
+#: Similarly, for bold and italic:
+#: `{fmt.bold}bold{fmt.nobold}normal{fmt.italic}italic{fmt.noitalic}`.
+#: Note that for backward compatibility, if {bell_symbol} or
+#: {activity_symbol} are not present in the template, they are
+#: prepended to it.
+
+# active_tab_title_template none
+
+#: Template to use for active tabs. If not specified falls back to
+#: tab_title_template.
+
+# active_tab_foreground   #000
+# active_tab_background   #eee
+# active_tab_font_style   bold-italic
+# inactive_tab_foreground #444
+# inactive_tab_background #999
+# inactive_tab_font_style normal
+
+#: Tab bar colors and styles.
+
+# tab_bar_background none
+
+#: Background color for the tab bar. Defaults to using the terminal
+#: background color.
+
+# tab_bar_margin_color none
+
+#: Color for the tab bar margin area. Defaults to using the terminal
+#: background color for margins above and below the tab bar. For side
+#: margins the default color is chosen to match the background color
+#: of the neighboring tab.
+
+#: }}}
+
+#: Color scheme {{{
+
+# foreground #dddddd
+# background #000000
+
+#: The foreground and background colors.
+
+# background_opacity 1.0
+
+#: The opacity of the background. A number between zero and one, where
+#: one is opaque and zero is fully transparent. This will only work if
+#: supported by the OS (for instance, when using a compositor under
+#: X11). Note that it only sets the background color's opacity in
+#: cells that have the same background color as the default terminal
+#: background, so that things like the status bar in vim, powerline
+#: prompts, etc. still look good. But it means that if you use a color
+#: theme with a background color in your editor, it will not be
+#: rendered as transparent. Instead you should change the default
+#: background color in your kitty config and not use a background
+#: color in the editor color scheme. Or use the escape codes to set
+#: the terminals default colors in a shell script to launch your
+#: editor. Be aware that using a value less than 1.0 is a (possibly
+#: significant) performance hit. When using a low value for this
+#: setting, it is desirable that you set the background color to a
+#: color the matches the general color of the desktop background, for
+#: best text rendering.  If you want to dynamically change
+#: transparency of windows, set dynamic_background_opacity to yes
+#: (this is off by default as it has a performance cost). Changing
+#: this option when reloading the config will only work if
+#: dynamic_background_opacity was enabled in the original config.
+
+# background_blur 0
+
+#: Set to a positive value to enable background blur (blurring of the
+#: visuals behind a transparent window) on platforms that support it.
+#: Only takes effect when background_opacity is less than one. On
+#: macOS, this will also control the blur radius (amount of blurring).
+#: Setting it to too high a value will cause severe performance issues
+#: and/or rendering artifacts. Usually, values up to 64 work well.
+#: Note that this might cause performance issues, depending on how the
+#: platform implements it, so use with care. Currently supported on
+#: macOS and KDE under X11.
+
+# background_image none
+
+#: Path to a background image. Must be in PNG format.
+
+# background_image_layout tiled
+
+#: Whether to tile, scale or clamp the background image. The value can
+#: be one of tiled, mirror-tiled, scaled, clamped, centered or
+#: cscaled. The scaled and cscaled values scale the image to the
+#: window size, with cscaled preserving the image aspect ratio.
+
+# background_image_linear no
+
+#: When background image is scaled, whether linear interpolation
+#: should be used.
+
+# dynamic_background_opacity no
+
+#: Allow changing of the background_opacity dynamically, using either
+#: keyboard shortcuts (increase_background_opacity and
+#: decrease_background_opacity) or the remote control facility.
+#: Changing this option by reloading the config is not supported.
+
+# background_tint 0.0
+
+#: How much to tint the background image by the background color. This
+#: option makes it easier to read the text. Tinting is done using the
+#: current background color for each window. This option applies only
+#: if background_opacity is set and transparent windows are supported
+#: or background_image is set.
+
+# background_tint_gaps 1.0
+
+#: How much to tint the background image at the window gaps by the
+#: background color, after applying background_tint. Since this is
+#: multiplicative with background_tint, it can be used to lighten the
+#: tint over the window gaps for a *separated* look.
+
+# dim_opacity 0.4
+
+#: How much to dim text that has the DIM/FAINT attribute set. One
+#: means no dimming and zero means fully dimmed (i.e. invisible).
+
+# selection_foreground #000000
+# selection_background #fffacd
+
+#: The foreground and background colors for text selected with the
+#: mouse. Setting both of these to none will cause a "reverse video"
+#: effect for selections, where the selection will be the cell text
+#: color and the text will become the cell background color. Setting
+#: only selection_foreground to none will cause the foreground color
+#: to be used unchanged. Note that these colors can be overridden by
+#: the program running in the terminal.
+
+#: The color table {{{
+
+#: The 256 terminal colors. There are 8 basic colors, each color has a
+#: dull and bright version, for the first 16 colors. You can set the
+#: remaining 240 colors as color16 to color255.
+
+# color0 #000000
+# color8 #767676
+
+#: black
+
+# color1 #cc0403
+# color9 #f2201f
+
+#: red
+
+# color2  #19cb00
+# color10 #23fd00
+
+#: green
+
+# color3  #cecb00
+# color11 #fffd00
+
+#: yellow
+
+# color4  #0d73cc
+# color12 #1a8fff
+
+#: blue
+
+# color5  #cb1ed1
+# color13 #fd28ff
+
+#: magenta
+
+# color6  #0dcdcd
+# color14 #14ffff
+
+#: cyan
+
+# color7  #dddddd
+# color15 #ffffff
+
+#: white
+
+# mark1_foreground black
+
+#: Color for marks of type 1
+
+# mark1_background #98d3cb
+
+#: Color for marks of type 1 (light steel blue)
+
+# mark2_foreground black
+
+#: Color for marks of type 2
+
+# mark2_background #f2dcd3
+
+#: Color for marks of type 1 (beige)
+
+# mark3_foreground black
+
+#: Color for marks of type 3
+
+# mark3_background #f274bc
+
+#: Color for marks of type 3 (violet)
+
+#: }}}
+
+#: }}}
+
+#: Advanced {{{
+
+# shell .
+
+#: The shell program to execute. The default value of . means to use
+#: whatever shell is set as the default shell for the current user.
+#: Note that on macOS if you change this, you might need to add
+#: --login and --interactive to ensure that the shell starts in
+#: interactive mode and reads its startup rc files. Environment
+#: variables are expanded in this setting.
+
+# editor .
+
+#: The terminal based text editor (such as vim or nano) to use when
+#: editing the kitty config file or similar tasks.
+
+#: The default value of . means to use the environment variables
+#: VISUAL and EDITOR in that order. If these variables aren't set,
+#: kitty will run your shell ($SHELL -l -i -c env) to see if your
+#: shell startup rc files set VISUAL or EDITOR. If that doesn't work,
+#: kitty will cycle through various known editors (vim, emacs, etc.)
+#: and take the first one that exists on your system.
+
+# close_on_child_death no
+
+#: Close the window when the child process (shell) exits. With the
+#: default value no, the terminal will remain open when the child
+#: exits as long as there are still processes outputting to the
+#: terminal (for example disowned or backgrounded processes). When
+#: enabled with yes, the window will close as soon as the child
+#: process exits. Note that setting it to yes means that any
+#: background processes still using the terminal can fail silently
+#: because their stdout/stderr/stdin no longer work.
+
+# remote_control_password
+
+#: Allow other programs to control kitty using passwords. This option
+#: can be specified multiple times to add multiple passwords. If no
+#: passwords are present kitty will ask the user for permission if a
+#: program tries to use remote control with a password. A password can
+#: also *optionally* be associated with a set of allowed remote
+#: control actions. For example::
+
+#:     remote_control_password "my passphrase" get-colors set-colors focus-window focus-tab
+
+#: Only the specified actions will be allowed when using this
+#: password. Glob patterns can be used too, for example::
+
+#:     remote_control_password "my passphrase" set-tab-* resize-*
+
+#: To get a list of available actions, run::
+
+#:     kitten @ --help
+
+#: A set of actions to be allowed when no password is sent can be
+#: specified by using an empty password. For example::
+
+#:     remote_control_password "" *-colors
+
+#: Finally, the path to a python module can be specified that provides
+#: a function is_cmd_allowed that is used to check every remote
+#: control command. For example::
+
+#:     remote_control_password "my passphrase" my_rc_command_checker.py
+
+#: Relative paths are resolved from the kitty configuration directory.
+#: See rc_custom_auth <https://sw.kovidgoyal.net/kitty/remote-
+#: control/#rc-custom-auth> for details.
+
+# allow_remote_control no
+
+#: Allow other programs to control kitty. If you turn this on, other
+#: programs can control all aspects of kitty, including sending text
+#: to kitty windows, opening new windows, closing windows, reading the
+#: content of windows, etc. Note that this even works over SSH
+#: connections. The default setting of no prevents any form of remote
+#: control. The meaning of the various values are:
+
+#: password
+#:     Remote control requests received over both the TTY device and the socket
+#:     are confirmed based on passwords, see remote_control_password.
+
+#: socket-only
+#:     Remote control requests received over a socket are accepted
+#:     unconditionally. Requests received over the TTY are denied.
+#:     See listen_on.
+
+#: socket
+#:     Remote control requests received over a socket are accepted
+#:     unconditionally. Requests received over the TTY are confirmed based on
+#:     password.
+
+#: no
+#:     Remote control is completely disabled.
+
+#: yes
+#:     Remote control requests are always accepted.
+
+# listen_on none
+
+#: Listen to the specified socket for remote control connections. Note
+#: that this will apply to all kitty instances. It can be overridden
+#: by the kitty --listen-on command line option. For UNIX sockets,
+#: such as unix:${TEMP}/mykitty or unix:@mykitty (on Linux).
+#: Environment variables are expanded and relative paths are resolved
+#: with respect to the temporary directory. If {kitty_pid} is present,
+#: then it is replaced by the PID of the kitty process, otherwise the
+#: PID of the kitty process is appended to the value, with a hyphen.
+#: For TCP sockets such as tcp:localhost:0 a random port is always
+#: used even if a non-zero port number is specified.  See the help for
+#: kitty --listen-on for more details. Note that this will be ignored
+#: unless allow_remote_control is set to either: yes, socket or
+#: socket-only. Changing this option by reloading the config is not
+#: supported.
+
+# env
+
+#: Specify the environment variables to be set in all child processes.
+#: Using the name with an equal sign (e.g. env VAR=) will set it to
+#: the empty string. Specifying only the name (e.g. env VAR) will
+#: remove the variable from the child process' environment. Note that
+#: environment variables are expanded recursively, for example::
+
+#:     env VAR1=a
+#:     env VAR2=${HOME}/${VAR1}/b
+
+#: The value of VAR2 will be <path to home directory>/a/b.
+
+# watcher
+
+#: Path to python file which will be loaded for watchers
+#: <https://sw.kovidgoyal.net/kitty/launch/#watchers>. Can be
+#: specified more than once to load multiple watchers. The watchers
+#: will be added to every kitty window. Relative paths are resolved
+#: relative to the kitty config directory. Note that reloading the
+#: config will only affect windows created after the reload.
+
+# exe_search_path
+
+#: Control where kitty finds the programs to run. The default search
+#: order is: First search the system wide PATH, then ~/.local/bin and
+#: ~/bin. If still not found, the PATH defined in the login shell
+#: after sourcing all its startup files is tried. Finally, if present,
+#: the PATH specified by the env option is tried.
+
+#: This option allows you to prepend, append, or remove paths from
+#: this search order. It can be specified multiple times for multiple
+#: paths. A simple path will be prepended to the search order. A path
+#: that starts with the + sign will be append to the search order,
+#: after ~/bin above. A path that starts with the - sign will be
+#: removed from the entire search order. For example::
+
+#:     exe_search_path /some/prepended/path
+#:     exe_search_path +/some/appended/path
+#:     exe_search_path -/some/excluded/path
+
+# update_check_interval 24
+
+#: The interval to periodically check if an update to kitty is
+#: available (in hours). If an update is found, a system notification
+#: is displayed informing you of the available update. The default is
+#: to check every 24 hours, set to zero to disable. Update checking is
+#: only done by the official binary builds. Distro packages or source
+#: builds do not do update checking. Changing this option by reloading
+#: the config is not supported.
+
+# startup_session none
+
+#: Path to a session file to use for all kitty instances. Can be
+#: overridden by using the kitty --session =none command line option
+#: for individual instances. See sessions
+#: <https://sw.kovidgoyal.net/kitty/overview/#sessions> in the kitty
+#: documentation for details. Note that relative paths are interpreted
+#: with respect to the kitty config directory. Environment variables
+#: in the path are expanded. Changing this option by reloading the
+#: config is not supported.
+
+# clipboard_control write-clipboard write-primary read-clipboard-ask read-primary-ask
+
+#: Allow programs running in kitty to read and write from the
+#: clipboard. You can control exactly which actions are allowed. The
+#: possible actions are: write-clipboard, read-clipboard, write-
+#: primary, read-primary, read-clipboard-ask, read-primary-ask. The
+#: default is to allow writing to the clipboard and primary selection
+#: and to ask for permission when a program tries to read from the
+#: clipboard. Note that disabling the read confirmation is a security
+#: risk as it means that any program, even the ones running on a
+#: remote server via SSH can read your clipboard. See also
+#: clipboard_max_size.
+
+# clipboard_max_size 512
+
+#: The maximum size (in MB) of data from programs running in kitty
+#: that will be stored for writing to the system clipboard. A value of
+#: zero means no size limit is applied. See also clipboard_control.
+
+# file_transfer_confirmation_bypass
+
+#: The password that can be supplied to the file transfer kitten
+#: <https://sw.kovidgoyal.net/kitty/kittens/transfer/> to skip the
+#: transfer confirmation prompt. This should only be used when
+#: initiating transfers from trusted computers, over trusted networks
+#: or encrypted transports, as it allows any programs running on the
+#: remote machine to read/write to the local filesystem, without
+#: permission.
+
+# allow_hyperlinks yes
+
+#: Process hyperlink escape sequences (OSC 8). If disabled OSC 8
+#: escape sequences are ignored. Otherwise they become clickable
+#: links, that you can click with the mouse or by using the hints
+#: kitten <https://sw.kovidgoyal.net/kitty/kittens/hints/>. The
+#: special value of ask means that kitty will ask before opening the
+#: link when clicked.
+
+# shell_integration enabled
+
+#: Enable shell integration on supported shells. This enables features
+#: such as jumping to previous prompts, browsing the output of the
+#: previous command in a pager, etc. on supported shells. Set to
+#: disabled to turn off shell integration, completely. It is also
+#: possible to disable individual features, set to a space separated
+#: list of these values: no-rc, no-cursor, no-title, no-cwd, no-
+#: prompt-mark, no-complete, no-sudo. See Shell integration
+#: <https://sw.kovidgoyal.net/kitty/shell-integration/> for details.
+
+# allow_cloning ask
+
+#: Control whether programs running in the terminal can request new
+#: windows to be created. The canonical example is clone-in-kitty
+#: <https://sw.kovidgoyal.net/kitty/shell-integration/#clone-shell>.
+#: By default, kitty will ask for permission for each clone request.
+#: Allowing cloning unconditionally gives programs running in the
+#: terminal (including over SSH) permission to execute arbitrary code,
+#: as the user who is running the terminal, on the computer that the
+#: terminal is running on.
+
+# clone_source_strategies venv,conda,env_var,path
+
+#: Control what shell code is sourced when running clone-in-kitty in
+#: the newly cloned window. The supported strategies are:
+
+#: venv
+#:     Source the file $VIRTUAL_ENV/bin/activate. This is used by the
+#:     Python stdlib venv module and allows cloning venvs automatically.
+#: conda
+#:     Run conda activate $CONDA_DEFAULT_ENV. This supports the virtual
+#:     environments created by conda.
+#: env_var
+#:     Execute the contents of the environment variable
+#:     KITTY_CLONE_SOURCE_CODE with eval.
+#: path
+#:     Source the file pointed to by the environment variable
+#:     KITTY_CLONE_SOURCE_PATH.
+
+#: This option must be a comma separated list of the above values.
+#: Only the first valid match, in the order specified, is sourced.
+
+# term xterm-kitty
+
+#: The value of the TERM environment variable to set. Changing this
+#: can break many terminal programs, only change it if you know what
+#: you are doing, not because you read some advice on "Stack Overflow"
+#: to change it. The TERM variable is used by various programs to get
+#: information about the capabilities and behavior of the terminal. If
+#: you change it, depending on what programs you run, and how
+#: different the terminal you are changing it to is, various things
+#: from key-presses, to colors, to various advanced features may not
+#: work. Changing this option by reloading the config will only affect
+#: newly created windows.
+
+# forward_stdio no
+
+#: Forward STDOUT and STDERR of the kitty process to child processes
+#: as file descriptors 3 and 4. This is useful for debugging as it
+#: allows child processes to print to kitty's STDOUT directly. For
+#: example, echo hello world >&3 in a shell will print to the parent
+#: kitty's STDOUT. When enabled, this also sets the
+#: KITTY_STDIO_FORWARDED=3 environment variable so child processes
+#: know about the forwarding.
+
+#: }}}
+
+#: OS specific tweaks {{{
+
+# wayland_titlebar_color system
+
+#: The color of the kitty window's titlebar on Wayland systems with
+#: client side window decorations such as GNOME. A value of system
+#: means to use the default system color, a value of background means
+#: to use the background color of the currently active window and
+#: finally you can use an arbitrary color, such as #12af59 or red.
+
+# macos_titlebar_color system
+
+#: The color of the kitty window's titlebar on macOS. A value of
+#: system means to use the default system color, light or dark can
+#: also be used to set it explicitly. A value of background means to
+#: use the background color of the currently active window and finally
+#: you can use an arbitrary color, such as #12af59 or red. WARNING:
+#: This option works by using a hack when arbitrary color (or
+#: background) is configured, as there is no proper Cocoa API for it.
+#: It sets the background color of the entire window and makes the
+#: titlebar transparent. As such it is incompatible with
+#: background_opacity. If you want to use both, you are probably
+#: better off just hiding the titlebar with hide_window_decorations.
+
+# macos_option_as_alt no
+
+#: Use the Option key as an Alt key on macOS. With this set to no,
+#: kitty will use the macOS native Option+Key to enter Unicode
+#: character behavior. This will break any Alt+Key keyboard shortcuts
+#: in your terminal programs, but you can use the macOS Unicode input
+#: technique. You can use the values: left, right or both to use only
+#: the left, right or both Option keys as Alt, instead. Note that
+#: kitty itself always treats Option the same as Alt. This means you
+#: cannot use this option to configure different kitty shortcuts for
+#: Option+Key vs. Alt+Key. Also, any kitty shortcuts using
+#: Option/Alt+Key will take priority, so that any such key presses
+#: will not be passed to terminal programs running inside kitty.
+#: Changing this option by reloading the config is not supported.
+
+# macos_hide_from_tasks no
+
+#: Hide the kitty window from running tasks on macOS (⌘+Tab and the
+#: Dock). Changing this option by reloading the config is not
+#: supported.
+
+# macos_quit_when_last_window_closed no
+
+#: Have kitty quit when all the top-level windows are closed on macOS.
+#: By default, kitty will stay running, even with no open windows, as
+#: is the expected behavior on macOS.
+
+# macos_window_resizable yes
+
+#: Disable this if you want kitty top-level OS windows to not be
+#: resizable on macOS.
+
+# macos_thicken_font 0
+
+#: Draw an extra border around the font with the given width, to
+#: increase legibility at small font sizes on macOS. For example, a
+#: value of 0.75 will result in rendering that looks similar to sub-
+#: pixel antialiasing at common font sizes. Note that in modern kitty,
+#: this option is obsolete (although still supported). Consider using
+#: text_composition_strategy instead.
+
+# macos_traditional_fullscreen no
+
+#: Use the macOS traditional full-screen transition, that is faster,
+#: but less pretty.
+
+# macos_show_window_title_in all
+
+#: Control where the window title is displayed on macOS. A value of
+#: window will show the title of the currently active window at the
+#: top of the macOS window. A value of menubar will show the title of
+#: the currently active window in the macOS global menu bar, making
+#: use of otherwise wasted space. A value of all will show the title
+#: in both places, and none hides the title. See
+#: macos_menubar_title_max_length for how to control the length of the
+#: title in the menu bar.
+
+# macos_menubar_title_max_length 0
+
+#: The maximum number of characters from the window title to show in
+#: the macOS global menu bar. Values less than one means that there is
+#: no maximum limit.
+
+# macos_custom_beam_cursor no
+
+#: Use a custom mouse cursor for macOS that is easier to see on both
+#: light and dark backgrounds. Nowadays, the default macOS cursor
+#: already comes with a white border. WARNING: this might make your
+#: mouse cursor invisible on dual GPU machines. Changing this option
+#: by reloading the config is not supported.
+
+# macos_colorspace srgb
+
+#: The colorspace in which to interpret terminal colors. The default
+#: of srgb will cause colors to match those seen in web browsers. The
+#: value of default will use whatever the native colorspace of the
+#: display is. The value of displayp3 will use Apple's special
+#: snowflake display P3 color space, which will result in over
+#: saturated (brighter) colors with some color shift. Reloading
+#: configuration will change this value only for newly created OS
+#: windows.
+
+# linux_display_server auto
+
+#: Choose between Wayland and X11 backends. By default, an appropriate
+#: backend based on the system state is chosen automatically. Set it
+#: to x11 or wayland to force the choice. Changing this option by
+#: reloading the config is not supported.
+
+#: }}}
+
+#: Keyboard shortcuts {{{
+
+#: Keys are identified simply by their lowercase Unicode characters.
+#: For example: a for the A key, [ for the left square bracket key,
+#: etc. For functional keys, such as Enter or Escape, the names are
+#: present at Functional key definitions
+#: <https://sw.kovidgoyal.net/kitty/keyboard-protocol/#functional>.
+#: For modifier keys, the names are ctrl (control, ⌃), shift (⇧), alt
+#: (opt, option, ⌥), super (cmd, command, ⌘). See also: GLFW mods
+#: <https://www.glfw.org/docs/latest/group__mods.html>
+
+#: On Linux you can also use XKB key names to bind keys that are not
+#: supported by GLFW. See XKB keys
+#: <https://github.com/xkbcommon/libxkbcommon/blob/master/include/xkbcommon/xkbcommon-
+#: keysyms.h> for a list of key names. The name to use is the part
+#: after the XKB_KEY_ prefix. Note that you can only use an XKB key
+#: name for keys that are not known as GLFW keys.
+
+#: Finally, you can use raw system key codes to map keys, again only
+#: for keys that are not known as GLFW keys. To see the system key
+#: code for a key, start kitty with the kitty --debug-input option,
+#: kitty will output some debug text for every key event. In that text
+#: look for native_code, the value of that becomes the key name in the
+#: shortcut. For example:
+
+#: .. code-block:: none
+
+#:     on_key_input: glfw key: 0x61 native_code: 0x61 action: PRESS mods: none text: 'a'
+
+#: Here, the key name for the A key is 0x61 and you can use it with::
+
+#:     map ctrl+0x61 something
+
+#: to map Ctrl+A to something.
+
+#: You can use the special action no_op to unmap a keyboard shortcut
+#: that is assigned in the default configuration::
+
+#:     map kitty_mod+space no_op
+
+#: If you would like kitty to completely ignore a key event, not even
+#: sending it to the program running in the terminal, map it to
+#: discard_event::
+
+#:     map kitty_mod+f1 discard_event
+
+#: You can combine multiple actions to be triggered by a single
+#: shortcut with combine action, using the syntax below::
+
+#:     map key combine <separator> action1 <separator> action2 <separator> action3 ...
+
+#: For example::
+
+#:     map kitty_mod+e combine : new_window : next_layout
+
+#: This will create a new window and switch to the next available
+#: layout.
+
+#: You can use multi-key shortcuts with the syntax shown below::
+
+#:     map key1>key2>key3 action
+
+#: For example::
+
+#:     map ctrl+f>2 set_font_size 20
+
+#: The full list of actions that can be mapped to key presses is
+#: available here <https://sw.kovidgoyal.net/kitty/actions/>.
+
+# kitty_mod ctrl+shift
+
+#: Special modifier key alias for default shortcuts. You can change
+#: the value of this option to alter all default shortcuts that use
+#: kitty_mod.
+
+# clear_all_shortcuts no
+
+#: Remove all shortcut definitions up to this point. Useful, for
+#: instance, to remove the default shortcuts.
+
+# action_alias
+
+#: E.g. action_alias launch_tab launch --type=tab --cwd=current
+
+#: Define action aliases to avoid repeating the same options in
+#: multiple mappings. Aliases can be defined for any action and will
+#: be expanded recursively. For example, the above alias allows you to
+#: create mappings to launch a new tab in the current working
+#: directory without duplication::
+
+#:     map f1 launch_tab vim
+#:     map f2 launch_tab emacs
+
+#: Similarly, to alias kitten invocation::
+
+#:     action_alias hints kitten hints --hints-offset=0
+
+# kitten_alias
+
+#: E.g. kitten_alias hints hints --hints-offset=0
+
+#: Like action_alias above, but specifically for kittens. Generally,
+#: prefer to use action_alias. This option is a legacy version,
+#: present for backwards compatibility. It causes all invocations of
+#: the aliased kitten to be substituted. So the example above will
+#: cause all invocations of the hints kitten to have the --hints-
+#: offset=0 option applied.
+
+#: Clipboard {{{
+
+#: Copy to clipboard
+
+# map kitty_mod+c copy_to_clipboard
+# map cmd+c       copy_to_clipboard
+
+#::  There is also a copy_or_interrupt action that can be optionally
+#::  mapped to Ctrl+C. It will copy only if there is a selection and
+#::  send an interrupt otherwise. Similarly,
+#::  copy_and_clear_or_interrupt will copy and clear the selection or
+#::  send an interrupt if there is no selection.
+
+#: Paste from clipboard
+
+# map kitty_mod+v paste_from_clipboard
+# map cmd+v       paste_from_clipboard
+
+#: Paste from selection
+
+# map kitty_mod+s  paste_from_selection
+# map shift+insert paste_from_selection
+
+#: Pass selection to program
+
+# map kitty_mod+o pass_selection_to_program
+
+#::  You can also pass the contents of the current selection to any
+#::  program with pass_selection_to_program. By default, the system's
+#::  open program is used, but you can specify your own, the selection
+#::  will be passed as a command line argument to the program. For
+#::  example::
+
+#::      map kitty_mod+o pass_selection_to_program firefox
+
+#::  You can pass the current selection to a terminal program running
+#::  in a new kitty window, by using the @selection placeholder::
+
+#::      map kitty_mod+y new_window less @selection
+
+#: }}}
+
+#: Scrolling {{{
+
+#: Scroll line up
+
+# map kitty_mod+up    scroll_line_up
+# map kitty_mod+k     scroll_line_up
+# map opt+cmd+page_up scroll_line_up
+# map cmd+up          scroll_line_up
+
+#: Scroll line down
+
+# map kitty_mod+down    scroll_line_down
+# map kitty_mod+j       scroll_line_down
+# map opt+cmd+page_down scroll_line_down
+# map cmd+down          scroll_line_down
+
+#: Scroll page up
+
+# map kitty_mod+page_up scroll_page_up
+# map cmd+page_up       scroll_page_up
+
+#: Scroll page down
+
+# map kitty_mod+page_down scroll_page_down
+# map cmd+page_down       scroll_page_down
+
+#: Scroll to top
+
+# map kitty_mod+home scroll_home
+# map cmd+home       scroll_home
+
+#: Scroll to bottom
+
+# map kitty_mod+end scroll_end
+# map cmd+end       scroll_end
+
+#: Scroll to previous shell prompt
+
+# map kitty_mod+z scroll_to_prompt -1
+
+#::  Use a parameter of 0 for scroll_to_prompt to scroll to the last
+#::  jumped to or the last clicked position. Requires shell
+#::  integration <https://sw.kovidgoyal.net/kitty/shell-integration/>
+#::  to work.
+
+#: Scroll to next shell prompt
+
+# map kitty_mod+x scroll_to_prompt 1
+
+#: Browse scrollback buffer in pager
+
+# map kitty_mod+h show_scrollback
+
+#::  You can pipe the contents of the current screen and history
+#::  buffer as STDIN to an arbitrary program using launch --stdin-
+#::  source. For example, the following opens the scrollback buffer in
+#::  less in an overlay window::
+
+#::      map f1 launch --stdin-source=@screen_scrollback --stdin-add-formatting --type=overlay less +G -R
+
+#::  For more details on piping screen and buffer contents to external
+#::  programs, see launch <https://sw.kovidgoyal.net/kitty/launch/>.
+
+#: Browse output of the last shell command in pager
+
+# map kitty_mod+g show_last_command_output
+
+#::  You can also define additional shortcuts to get the command
+#::  output. For example, to get the first command output on screen::
+
+#::      map f1 show_first_command_output_on_screen
+
+#::  To get the command output that was last accessed by a keyboard
+#::  action or mouse action::
+
+#::      map f1 show_last_visited_command_output
+
+#::  You can pipe the output of the last command run in the shell
+#::  using the launch action. For example, the following opens the
+#::  output in less in an overlay window::
+
+#::      map f1 launch --stdin-source=@last_cmd_output --stdin-add-formatting --type=overlay less +G -R
+
+#::  To get the output of the first command on the screen, use
+#::  @first_cmd_output_on_screen. To get the output of the last jumped
+#::  to command, use @last_visited_cmd_output.
+
+#::  Requires shell integration
+#::  <https://sw.kovidgoyal.net/kitty/shell-integration/> to work.
+
+#: }}}
+
+#: Window management {{{
+
+#: New window
+
+# map kitty_mod+enter new_window
+# map cmd+enter       new_window
+
+#::  You can open a new kitty window running an arbitrary program, for
+#::  example::
+
+#::      map kitty_mod+y launch mutt
+
+#::  You can open a new window with the current working directory set
+#::  to the working directory of the current window using::
+
+#::      map ctrl+alt+enter launch --cwd=current
+
+#::  You can open a new window that is allowed to control kitty via
+#::  the kitty remote control facility with launch --allow-remote-
+#::  control. Any programs running in that window will be allowed to
+#::  control kitty. For example::
+
+#::      map ctrl+enter launch --allow-remote-control some_program
+
+#::  You can open a new window next to the currently active window or
+#::  as the first window, with::
+
+#::      map ctrl+n launch --location=neighbor
+#::      map ctrl+f launch --location=first
+
+#::  For more details, see launch
+#::  <https://sw.kovidgoyal.net/kitty/launch/>.
+
+#: New OS window
+
+# map kitty_mod+n new_os_window
+# map cmd+n       new_os_window
+
+#::  Works like new_window above, except that it opens a top-level OS
+#::  window. In particular you can use new_os_window_with_cwd to open
+#::  a window with the current working directory.
+
+#: Close window
+
+# map kitty_mod+w close_window
+# map shift+cmd+d close_window
+
+#: Next window
+
+# map kitty_mod+] next_window
+
+#: Previous window
+
+# map kitty_mod+[ previous_window
+
+#: Move window forward
+
+# map kitty_mod+f move_window_forward
+
+#: Move window backward
+
+# map kitty_mod+b move_window_backward
+
+#: Move window to top
+
+# map kitty_mod+` move_window_to_top
+
+#: Start resizing window
+
+# map kitty_mod+r start_resizing_window
+# map cmd+r       start_resizing_window
+
+#: First window
+
+# map kitty_mod+1 first_window
+# map cmd+1       first_window
+
+#: Second window
+
+# map kitty_mod+2 second_window
+# map cmd+2       second_window
+
+#: Third window
+
+# map kitty_mod+3 third_window
+# map cmd+3       third_window
+
+#: Fourth window
+
+# map kitty_mod+4 fourth_window
+# map cmd+4       fourth_window
+
+#: Fifth window
+
+# map kitty_mod+5 fifth_window
+# map cmd+5       fifth_window
+
+#: Sixth window
+
+# map kitty_mod+6 sixth_window
+# map cmd+6       sixth_window
+
+#: Seventh window
+
+# map kitty_mod+7 seventh_window
+# map cmd+7       seventh_window
+
+#: Eighth window
+
+# map kitty_mod+8 eighth_window
+# map cmd+8       eighth_window
+
+#: Ninth window
+
+# map kitty_mod+9 ninth_window
+# map cmd+9       ninth_window
+
+#: Tenth window
+
+# map kitty_mod+0 tenth_window
+
+#: Visually select and focus window
+
+# map kitty_mod+f7 focus_visible_window
+
+#::  Display overlay numbers and alphabets on the window, and switch
+#::  the focus to the window when you press the key. When there are
+#::  only two windows, the focus will be switched directly without
+#::  displaying the overlay. You can change the overlay characters and
+#::  their order with option visual_window_select_characters.
+
+#: Visually swap window with another
+
+# map kitty_mod+f8 swap_with_window
+
+#::  Works like focus_visible_window above, but swaps the window.
+
+#: }}}
+
+#: Tab management {{{
+
+#: Next tab
+
+# map kitty_mod+right next_tab
+# map shift+cmd+]     next_tab
+# map ctrl+tab        next_tab
+
+#: Previous tab
+
+# map kitty_mod+left previous_tab
+# map shift+cmd+[    previous_tab
+# map ctrl+shift+tab previous_tab
+
+#: New tab
+
+# map kitty_mod+t new_tab
+# map cmd+t       new_tab
+
+#: Close tab
+
+# map kitty_mod+q close_tab
+# map cmd+w       close_tab
+
+#: Close OS window
+
+# map shift+cmd+w close_os_window
+
+#: Move tab forward
+
+# map kitty_mod+. move_tab_forward
+
+#: Move tab backward
+
+# map kitty_mod+, move_tab_backward
+
+#: Set tab title
+
+# map kitty_mod+alt+t set_tab_title
+# map shift+cmd+i     set_tab_title
+
+
+#: You can also create shortcuts to go to specific tabs, with 1 being
+#: the first tab, 2 the second tab and -1 being the previously active
+#: tab, and any number larger than the last tab being the last tab::
+
+#:     map ctrl+alt+1 goto_tab 1
+#:     map ctrl+alt+2 goto_tab 2
+
+#: Just as with new_window above, you can also pass the name of
+#: arbitrary commands to run when using new_tab and new_tab_with_cwd.
+#: Finally, if you want the new tab to open next to the current tab
+#: rather than at the end of the tabs list, use::
+
+#:     map ctrl+t new_tab !neighbor [optional cmd to run]
+#: }}}
+
+#: Layout management {{{
+
+#: Next layout
+
+# map kitty_mod+l next_layout
+
+
+#: You can also create shortcuts to switch to specific layouts::
+
+#:     map ctrl+alt+t goto_layout tall
+#:     map ctrl+alt+s goto_layout stack
+
+#: Similarly, to switch back to the previous layout::
+
+#:     map ctrl+alt+p last_used_layout
+
+#: There is also a toggle_layout action that switches to the named
+#: layout or back to the previous layout if in the named layout.
+#: Useful to temporarily "zoom" the active window by switching to the
+#: stack layout::
+
+#:     map ctrl+alt+z toggle_layout stack
+#: }}}
+
+#: Font sizes {{{
+
+#: You can change the font size for all top-level kitty OS windows at
+#: a time or only the current one.
+
+#: Increase font size
+
+# map kitty_mod+equal  change_font_size all +2.0
+# map kitty_mod+plus   change_font_size all +2.0
+# map kitty_mod+kp_add change_font_size all +2.0
+# map cmd+plus         change_font_size all +2.0
+# map cmd+equal        change_font_size all +2.0
+# map shift+cmd+equal  change_font_size all +2.0
+
+#: Decrease font size
+
+# map kitty_mod+minus       change_font_size all -2.0
+# map kitty_mod+kp_subtract change_font_size all -2.0
+# map cmd+minus             change_font_size all -2.0
+# map shift+cmd+minus       change_font_size all -2.0
+
+#: Reset font size
+
+# map kitty_mod+backspace change_font_size all 0
+# map cmd+0               change_font_size all 0
+
+
+#: To setup shortcuts for specific font sizes::
+
+#:     map kitty_mod+f6 change_font_size all 10.0
+
+#: To setup shortcuts to change only the current OS window's font
+#: size::
+
+#:     map kitty_mod+f6 change_font_size current 10.0
+#: }}}
+
+#: Select and act on visible text {{{
+
+#: Use the hints kitten to select text and either pass it to an
+#: external program or insert it into the terminal or copy it to the
+#: clipboard.
+
+#: Open URL
+
+# map kitty_mod+e open_url_with_hints
+
+#::  Open a currently visible URL using the keyboard. The program used
+#::  to open the URL is specified in open_url_with.
+
+#: Insert selected path
+
+# map kitty_mod+p>f kitten hints --type path --program -
+
+#::  Select a path/filename and insert it into the terminal. Useful,
+#::  for instance to run git commands on a filename output from a
+#::  previous git command.
+
+#: Open selected path
+
+# map kitty_mod+p>shift+f kitten hints --type path
+
+#::  Select a path/filename and open it with the default open program.
+
+#: Insert selected line
+
+# map kitty_mod+p>l kitten hints --type line --program -
+
+#::  Select a line of text and insert it into the terminal. Useful for
+#::  the output of things like: `ls -1`.
+
+#: Insert selected word
+
+# map kitty_mod+p>w kitten hints --type word --program -
+
+#::  Select words and insert into terminal.
+
+#: Insert selected hash
+
+# map kitty_mod+p>h kitten hints --type hash --program -
+
+#::  Select something that looks like a hash and insert it into the
+#::  terminal. Useful with git, which uses SHA1 hashes to identify
+#::  commits.
+
+#: Open the selected file at the selected line
+
+# map kitty_mod+p>n kitten hints --type linenum
+
+#::  Select something that looks like filename:linenum and open it in
+#::  vim at the specified line number.
+
+#: Open the selected hyperlink
+
+# map kitty_mod+p>y kitten hints --type hyperlink
+
+#::  Select a hyperlink (i.e. a URL that has been marked as such by
+#::  the terminal program, for example, by `ls --hyperlink=auto`).
+
+
+#: The hints kitten has many more modes of operation that you can map
+#: to different shortcuts. For a full description see hints kitten
+#: <https://sw.kovidgoyal.net/kitty/kittens/hints/>.
+#: }}}
+
+#: Miscellaneous {{{
+
+#: Show documentation
+
+# map kitty_mod+f1 show_kitty_doc overview
+
+#: Toggle fullscreen
+
+# map kitty_mod+f11 toggle_fullscreen
+# map ctrl+cmd+f    toggle_fullscreen
+
+#: Toggle maximized
+
+# map kitty_mod+f10 toggle_maximized
+
+#: Toggle macOS secure keyboard entry
+
+# map opt+cmd+s toggle_macos_secure_keyboard_entry
+
+#: Unicode input
+
+# map kitty_mod+u    kitten unicode_input
+# map ctrl+cmd+space kitten unicode_input
+
+#: Edit config file
+
+# map kitty_mod+f2 edit_config_file
+# map cmd+,        edit_config_file
+
+#: Open the kitty command shell
+
+# map kitty_mod+escape kitty_shell window
+
+#::  Open the kitty shell in a new window / tab / overlay / os_window
+#::  to control kitty using commands.
+
+#: Increase background opacity
+
+# map kitty_mod+a>m set_background_opacity +0.1
+
+#: Decrease background opacity
+
+# map kitty_mod+a>l set_background_opacity -0.1
+
+#: Make background fully opaque
+
+# map kitty_mod+a>1 set_background_opacity 1
+
+#: Reset background opacity
+
+# map kitty_mod+a>d set_background_opacity default
+
+#: Reset the terminal
+
+# map kitty_mod+delete clear_terminal reset active
+# map opt+cmd+r        clear_terminal reset active
+
+#::  You can create shortcuts to clear/reset the terminal. For
+#::  example::
+
+#::      # Reset the terminal
+#::      map f1 clear_terminal reset active
+#::      # Clear the terminal screen by erasing all contents
+#::      map f1 clear_terminal clear active
+#::      # Clear the terminal scrollback by erasing it
+#::      map f1 clear_terminal scrollback active
+#::      # Scroll the contents of the screen into the scrollback
+#::      map f1 clear_terminal scroll active
+#::      # Clear everything up to the line with the cursor
+#::      map f1 clear_terminal to_cursor active
+
+#::  If you want to operate on all kitty windows instead of just the
+#::  current one, use all instead of active.
+
+#::  Some useful functions that can be defined in the shell rc files
+#::  to perform various kinds of clearing of the current window:
+
+#::  .. code-block:: sh
+
+#::      clear-only-screen() {
+#::          printf "\e[H\e[2J"
+#::      }
+
+#::      clear-screen-and-scrollback() {
+#::          printf "\e[H\e[3J"
+#::      }
+
+#::      clear-screen-saving-contents-in-scrollback() {
+#::          printf "\e[H\e[22J"
+#::      }
+
+#::  For instance, using these escape codes, it is possible to remap
+#::  Ctrl+L to both scroll the current screen contents into the
+#::  scrollback buffer and clear the screen, instead of just clearing
+#::  the screen. For ZSH, in ~/.zshrc, add:
+
+#::  .. code-block:: zsh
+
+#::      ctrl_l() {
+#::          builtin print -rn -- $'\r\e[0J\e[H\e[22J' >"$TTY"
+#::          builtin zle .reset-prompt
+#::          builtin zle -R
+#::      }
+#::      zle -N ctrl_l
+#::      bindkey '^l' ctrl_l
+
+#: Clear up to cursor line
+
+# map cmd+k clear_terminal to_cursor active
+
+#: Reload kitty.conf
+
+# map kitty_mod+f5 load_config_file
+# map ctrl+cmd+,   load_config_file
+
+#::  Reload kitty.conf, applying any changes since the last time it
+#::  was loaded. Note that a handful of options cannot be dynamically
+#::  changed and require a full restart of kitty. Particularly, when
+#::  changing shortcuts for actions located on the macOS global menu
+#::  bar, a full restart is needed. You can also map a keybinding to
+#::  load a different config file, for example::
+
+#::      map f5 load_config /path/to/alternative/kitty.conf
+
+#::  Note that all options from the original kitty.conf are discarded,
+#::  in other words the new configuration *replace* the old ones.
+
+#: Debug kitty configuration
+
+# map kitty_mod+f6 debug_config
+# map opt+cmd+,    debug_config
+
+#::  Show details about exactly what configuration kitty is running
+#::  with and its host environment. Useful for debugging issues.
+
+#: Send arbitrary text on key presses
+
+#::  E.g. map ctrl+shift+alt+h send_text all Hello World
+
+#::  You can tell kitty to send arbitrary (UTF-8) encoded text to the
+#::  client program when pressing specified shortcut keys. For
+#::  example::
+
+#::      map ctrl+alt+a send_text all Special text
+
+#::  This will send "Special text" when you press the Ctrl+Alt+A key
+#::  combination. The text to be sent decodes ANSI C escapes
+#::  <https://www.gnu.org/software/bash/manual/html_node/ANSI_002dC-
+#::  Quoting.html> so you can use escapes like \e to send control
+#::  codes or \u21fb to send Unicode characters (or you can just input
+#::  the Unicode characters directly as UTF-8 text). You can use
+#::  `kitten show_key` to get the key escape codes you want to
+#::  emulate.
+
+#::  The first argument to send_text is the keyboard modes in which to
+#::  activate the shortcut. The possible values are normal,
+#::  application, kitty or a comma separated combination of them. The
+#::  modes normal and application refer to the DECCKM cursor key mode
+#::  for terminals, and kitty refers to the kitty extended keyboard
+#::  protocol. The special value all means all of them.
+
+#::  Some more examples::
+
+#::      # Output a word and move the cursor to the start of the line (like typing and pressing Home)
+#::      map ctrl+alt+a send_text normal Word\e[H
+#::      map ctrl+alt+a send_text application Word\eOH
+#::      # Run a command at a shell prompt (like typing the command and pressing Enter)
+#::      map ctrl+alt+a send_text normal,application some command with arguments\r
+
+#: Open kitty Website
+
+# map shift+cmd+/ open_url https://sw.kovidgoyal.net/kitty/
+
+#: Hide macOS kitty application
+
+# map cmd+h hide_macos_app
+
+#: Hide macOS other applications
+
+# map opt+cmd+h hide_macos_other_apps
+
+#: Minimize macOS window
+
+# map cmd+m minimize_macos_window
+
+#: Quit kitty
+
+# map cmd+q quit
+
+#: }}}
+
+#: }}}
+
+
+
+# BEGIN_KITTY_THEME
+# Alabaster Custom
+include current-theme.conf
+# END_KITTY_THEME
